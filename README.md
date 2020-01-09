@@ -1,2 +1,2 @@
-# ![app icon](./.github/screenshots/EB.png)[DBM] Embed Builder
+# ![app icon](./screenshots/EB.png)[DBM] Embed Builder
  DBM Embed Builder (RawData)
