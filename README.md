@@ -19,6 +19,7 @@
 
 * Added `embed help`
 * Bugs fixed
+</details>
 
 <details><summary>1.2.5</summary>
 
