@@ -4,11 +4,11 @@
 # Installation
 Copy [Embed (Raw Data)](https://github.com/Gr3nDy/DBM-Embed-Builder/blob/master/RawData/embed.json) and import to
 DBM.
-1.Create New Command
-2.Right click the command
-3.Select Edit Raw Data
-4.Paste [Embed (Raw Data)](https://github.com/Gr3nDy/DBM-Embed-Builder/blob/master/RawData/embed.json)
-5.Click on save
+* 1.Create New Command
+* 2.Right click the command
+* 3.Select Edit Raw Data
+* 4.Paste [Embed (Raw Data)](https://github.com/Gr3nDy/DBM-Embed-Builder/blob/master/RawData/embed.json)
+* 5.Click on save
 
 
 # Features
