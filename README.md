@@ -12,3 +12,19 @@
 * `embed colors` | List of color variables
 * `embed examples` | List of example format
 </details>
+
+# Changelogs
+
+<details><summary>1.1.1</summary>
+
+* Added `embed help`
+* Bugs fixed
+
+<details><summary>1.2.5</summary>
+
+* Added `embed variables`
+* Added `embed colors`
+* Added `embed examples`
+* Bugs fixed
+
+</details>
