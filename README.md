@@ -26,5 +26,4 @@
 * Added `embed colors`
 * Added `embed examples`
 * Bugs fixed
-
 </details>
