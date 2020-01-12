@@ -1724,7 +1724,7 @@
     {
       "storage": "1",
       "varName": "help_COLORS",
-      "message": "**List Of Colors**\n\nThese are list of available **Color Variable**\n\n`{RED}`\n`{WHITE}`\n`{BLACK}`\n`{GREEN}`\n`{LIME}`\n`{BLUE}`\n`{AQUA}`\n`{YELLOW}`\n`{PURPLE}`\n`{PINK}`\n`{ORANGE}`\n`{GRAY}`\n`{DARK_GRAY}\n\nExample Usage;\n`color:{YELLOW}`\n\n`embed help 3` for more information\n",
+      "message": "**List Of Colors**\n\nThese are list of available **Color Variable**\n\n`{RED}`\n`{WHITE}`\n`{BLACK}`\n`{GREEN}`\n`{LIME}`\n`{BLUE}`\n`{AQUA}`\n`{YELLOW}`\n`{PURPLE}`\n`{PINK}`\n`{ORANGE}`\n`{GRAY}`\n`{DARK_GRAY}`\n\nExample Usage;\n`color:{YELLOW}`\n\n`embed help 3` for more information\n",
       "name": "Set Embed Description"
     },
     {
