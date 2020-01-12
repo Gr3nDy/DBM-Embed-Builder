@@ -1470,7 +1470,7 @@
     {
       "storage": "1",
       "varName": "help_1",
-      "message": "Create **Custom Embed** in **Discord**\n\nThis command allows you to create custom\nembed from json format here's the few step\ndo it if you're new to discord embed\n\nAlways use `\" \"` between the text if it's string/text\nfor an example you don't have to use it with color,timestamp,etc.\n\n**Command**: `embed <embed>`\n\n**Title**\n`title:\"THE TITLE\"`\n\n**Description**\n`description:\"THE DESCRIPTION\"`\n\n**Title + Description**\n`title:\"THE TITLE\",description:\"THE DESCRIPTION\"`\n\n**Title + URL**\n`title:\"THE TITLE\",url:\"\"https://example.com/\"`",
+      "message": "Create **Custom Embed** in **Discord**\n\nThis command allows you to create custom\nembed from json format here's the few step\ndo it if you're new to discord embed\n\nAlways use `\" \"` between the text if it's string/text\nfor an example you don't have to use it with color,timestamp,etc.\n\n**Command**: `embed <embed>`\n\n**Plaintext**\n`plaintext:\"TEXT\"`\n\n**Title**\n`title:\"THE TITLE\"`\n\n**Description**\n`description:\"THE DESCRIPTION\"`\n\n**Title + Description**\n`title:\"THE TITLE\",description:\"THE DESCRIPTION\"`\n\n**Title + URL**\n`title:\"THE TITLE\",url:\"\"https://example.com/\"`",
       "name": "Set Embed Description"
     },
     {
