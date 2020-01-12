@@ -42,4 +42,5 @@ DBM.
 * Thumbnail & Image both works with or without `{url:}`
 * Added more colors & variables
 * Bugs fixed
-*
+</details>
+
