@@ -967,9 +967,9 @@
       "comparison": "10",
       "value": "('{')",
       "iftrue": "0",
-      "iftrueVal": "",
-      "iffalse": "0",
-      "iffalseVal": "",
+      "iftrueVal": "4",
+      "iffalse": "3",
+      "iffalseVal": "3",
       "name": "Check Variable"
     },
     {
@@ -977,16 +977,16 @@
       "varName": "text",
       "comparison": "11",
       "value": "('}')",
-      "iftrue": "3",
-      "iftrueVal": "1",
-      "iffalse": "0",
-      "iffalseVal": "1",
+      "iftrue": "0",
+      "iftrueVal": "3",
+      "iffalse": "3",
+      "iffalseVal": "2",
       "name": "Check Variable"
     },
     {
       "behavior": "0",
       "interpretation": "0",
-      "code": "var myString = '{' + '${tempVars(\"text\")}' + '}';\nmyString",
+      "code": "var myString = '${tempVars(\"text\")}';\nvar sillyString = myString.substr(1);\nsillyString\n",
       "storage": "1",
       "varName": "text",
       "name": "Run Script"
@@ -994,7 +994,15 @@
     {
       "behavior": "0",
       "interpretation": "0",
-      "code": "var obj = ${tempVars(\"text\")};\nvar result = JSON.stringify(obj);\nresult.replace(/(\\s*?{\\s*?|\\s*?,\\s*?)(['\"])?([a-zA-Z0-9]+)(['\"])?:/g, '$1\"$3\":');\neval('var json = new Object(' + result + ')');\nresult",
+      "code": "var myString = '${tempVars(\"text\")}';\nvar sillyString = myString.slice(0, -1);\nsillyString\n",
+      "storage": "1",
+      "varName": "text",
+      "name": "Run Script"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "var obj = {${tempVars(\"text\")}};\nvar result = JSON.stringify(obj);\nresult.replace(/(\\s*?{\\s*?|\\s*?,\\s*?)(['\"])?([a-zA-Z0-9]+)(['\"])?:/g, '$1\"$3\":');\neval('var json = new Object(' + result + ')');\nresult",
       "storage": "1",
       "varName": "text",
       "name": "Run Script"
