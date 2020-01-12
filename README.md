@@ -36,3 +36,10 @@ DBM.
 * Added `embed examples`
 * Bugs fixed
 </details>
+
+<details><summary>1.7.2</summary>
+* More relaxed JSON
+* Thumbnail & Image both works with or without `{url:}`
+* Added more colors & variables
+* Bugs fixed
+*
