@@ -1479,7 +1479,7 @@
     {
       "storage": "1",
       "varName": "help_1",
-      "message": "Create **Custom Embed** in **Discord**\n\nThis command allows you to create custom\nembed from json format here's the few step\ndo it if you're new to discord embed\n\nAlways use `\" \"` between the text if it's string/text\nfor an example you don't have to use it with color,timestamp,etc.\n\n**Command**: `embed <embed>`\n\n**Plaintext**\n`plaintext:\"TEXT\"`\n\n**Title**\n`title:\"THE TITLE\"`\n\n**Description**\n`description:\"THE DESCRIPTION\"`\n\n**Title + Description**\n`title:\"THE TITLE\",description:\"THE DESCRIPTION\"`\n\n**Title + URL**\n`title:\"THE TITLE\",url:\"\"https://example.com/\"`",
+      "message": "Create **Custom Embed** in **Discord**\n\nThis command allows you to create custom embed from json format \nhere's a few step to do it if you're new to discord embed\n\nAlways use `\" \"` between the text if it's string/text\nfor an example you don't have to use it with color,timestamp,etc.\n\n**Command**: `embed <embed>`\n\n**Plaintext**\n`plaintext:\"TEXT\"`\n\n**Title**\n`title:\"THE TITLE\"`\n\n**Description**\n`description:\"THE DESCRIPTION\"`\n\n**Title + Description**\n`title:\"THE TITLE\",description:\"THE DESCRIPTION\"`\n\n**Title + URL**\n`title:\"THE TITLE\",url:\"\"https://example.com/\"`",
       "name": "Set Embed Description"
     },
     {
@@ -1703,7 +1703,7 @@
     {
       "storage": "1",
       "varName": "help_5",
-      "message": "**Image**\n`image:{url:\"https://image.com/IMAGE.png\"}`\n\n**Thumbnail**\n`thumbnail:{url:\"https://image.com/IMAGE.png\"}`\n\n**Footer**\n`footer:{text:\"THE TEXT\",icon_url:\"https://image.com/IMAGE.png\"}`\n\n\n**if you wish to see a few example of how to do multiple format;**\n**Command:** `embed example`\n\n\nI'm sorry i couldn't include all the documentary into **Embed Builder**\nHelp section, i'm trying my best to make a simple guide for beginner.\nHowever if you wish to learn more about **Discord.js Embeds** You could go to this site;\n[Docs](https://discordjs.guide/popular-topics/embeds.html)\n\n-_GrenDy#2045_",
+      "message": "**Image**\n`image:{url:\"https://image.com/IMAGE.png\"}`\n_or_\n`image:\"https://image.com/IMAGE.png\"`\n\n**Thumbnail**\n`thumbnail:{url:\"https://image.com/IMAGE.png\"}`\n_or_\n`thumbnail:\"https://image.com/IMAGE.png\"`\n\n**Footer**\n`footer:{text:\"THE TEXT\",icon_url:\"https://image.com/IMAGE.png\"}`\n\n\n**if you wish to see a few example of how to do multiple format;**\n**Command:** `embed example`\n\n\nI'm sorry i couldn't include all the documentary into **Embed Builder**\nHelp section, i'm trying my best to make a simple guide for beginner.\nHowever if you wish to learn more about **Discord.js Embeds** You could go to this site;\n[Docs](https://discordjs.guide/popular-topics/embeds.html)\n\n-_GrenDy#2045_",
       "name": "Set Embed Description"
     },
     {
@@ -1876,5 +1876,9 @@
       "name": "End Action Sequence"
     }
   ],
-  "comType": "0"
+  "comType": "0",
+  "_aliases": [
+    "embedbuilder",
+    "eb"
+  ]
 }
