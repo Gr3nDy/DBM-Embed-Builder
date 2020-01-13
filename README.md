@@ -46,4 +46,4 @@ DBM.
 
 # Note
 If you like to use an online generator for json embed builder you can use;
-n/ [Nadeko Embed Builder](https://eb.nadeko.bot)
+\n [Nadeko Embed Builder](https://eb.nadeko.bot)
