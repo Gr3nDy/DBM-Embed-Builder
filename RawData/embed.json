@@ -1190,12 +1190,21 @@
       "name": "Comment"
     },
     {
+      "text": "${tempVars(\"text\")}",
+      "text2": "'",
+      "text3": "’",
+      "info": "0",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
       "storage": "1",
       "varName": "text",
       "comparison": "10",
       "value": "('{')",
       "iftrue": "0",
-      "iftrueVal": "4",
+      "iftrueVal": "5",
       "iffalse": "3",
       "iffalseVal": "4",
       "name": "Check Variable"
@@ -1206,7 +1215,7 @@
       "comparison": "11",
       "value": "('}')",
       "iftrue": "0",
-      "iftrueVal": "2",
+      "iftrueVal": "4",
       "iffalse": "3",
       "iffalseVal": "3",
       "name": "Check Variable"
@@ -1848,7 +1857,7 @@
     {
       "storage": "1",
       "varName": "help_EXAMPLE",
-      "message": "**JSON Example**\n\n```title:\"Welcome To The Server\",description:\"Hi @john welcome to {SERVER}\",author:{name:\"{USER}\",icon_url:\"{USER.AVATAR}\"},color:#7c6e9c,timestamp:{CURRENT_TIME}```\n\n```title:\"Announcement\",description:\"Tomorrow we're going to roll the giveaway winner\",thumbnail:{url:\"{SERVER.ICON}\"},color:{RED},footer:{text:\"{USER.TAG}\",icon_url:\"{USER.AVATAR}\"}```\n\n```description:\"Shout out to my friend @xxgamerslayer3000xx for giving me food n stuff\",fields:[{name:\"Note\",value:\"i don't actually like john\"}]```\n\n\n",
+      "message": "**JSON Example**\n\n```title:\"Welcome To The Server\",description:\"Hi @john welcome to {SERVER}\",author:{name:\"{USER}\",icon_url:\"{USER.AVATAR}\"},color:#7c6e9c,timestamp:{CURRENT_TIME}```\n\n```title:\"Announcement\",description:\"Tomorrow were going to roll the giveaway winner\",thumbnail:{url:\"{SERVER.ICON}\"},color:{RED},footer:{text:\"{USER.TAG}\",icon_url:\"{USER.AVATAR}\"}```\n\n```description:\"Shout out to my friend @xxgamerslayer3000xx for giving me food n stuff\",fields:[{name:\"Note\",value:\"i don't actually like john\"}]```\n\n\n",
       "name": "Set Embed Description"
     },
     {
