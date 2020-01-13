@@ -44,3 +44,6 @@ DBM.
 * Bugs fixed
 </details>
 
+# Note
+If you like to use an online generator for json embed builder you can use;
+[Nadeko Embed Builder](http://eb.nadekobot.me)
