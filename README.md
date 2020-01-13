@@ -2,6 +2,8 @@
 ![release](https://img.shields.io/static/v1?label=release&message=1.7.2&color=red)
 
 Create **Embed** inside **Discord**
+![gif](./Screenshot/GIF.gif)
+
  
 # Installation
 Copy [Embed (Raw Data)](https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/RawData/embed.json) and import to
