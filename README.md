@@ -1,6 +1,7 @@
 # ![app icon](./Screenshot/EB.png) [DBM] Embed Builder
 ![release](https://img.shields.io/static/v1?label=release&message=1.7.2&color=red)
- Create **Embed** inside **Discord**
+
+Create **Embed** inside **Discord**
  
 # Installation
 Copy [Embed (Raw Data)](https://github.com/Gr3nDy/DBM-Embed-Builder/blob/master/RawData/embed.json) and import to
