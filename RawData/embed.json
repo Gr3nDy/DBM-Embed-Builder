@@ -1193,7 +1193,7 @@
       "text": "${tempVars(\"text\")}",
       "text2": "'",
       "text3": "’",
-      "info": "0",
+      "info": "1",
       "storage": "1",
       "varName": "text",
       "name": "Replace Text"
