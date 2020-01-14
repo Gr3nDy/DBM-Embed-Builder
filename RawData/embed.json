@@ -1030,6 +1030,15 @@
       "name": "Run Script"
     },
     {
+      "text": "${tempVars(\"text\")}",
+      "text2": "'",
+      "text3": "’",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
       "comment": "[thumbnail]",
       "color": "#ffffff",
       "name": "Comment"
@@ -1199,12 +1208,12 @@
       "name": "Replace Text"
     },
     {
-      "text": "${tempVars(\"MESSAGE_CONTENT\")}",
+      "text": "${tempVars(\"text\")}",
       "text2": "'",
       "text3": "’",
       "info": "1",
       "storage": "1",
-      "varName": "MESSAGE_CONTENT",
+      "varName": "text",
       "name": "Replace Text"
     },
     {
