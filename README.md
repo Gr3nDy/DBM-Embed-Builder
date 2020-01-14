@@ -46,6 +46,7 @@ DBM.
 * More relaxed JSON
 * Thumbnail & Image both works with or without `{url:}`
 * Added more colors & variables
+* Added `plainText`
 * Bugs fixed
 </details>
 
