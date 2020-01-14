@@ -662,6 +662,20 @@
       "name": "Replace Text"
     },
     {
+      "comment": "{@}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{@}",
+      "text3": "@",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
       "comment": "{CURRENT_TIME}",
       "color": "#ff00ff",
       "name": "Comment"
@@ -1182,6 +1196,15 @@
       "info": "0",
       "storage": "1",
       "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"MESSAGE_CONTENT\")}",
+      "text2": "'",
+      "text3": "’",
+      "info": "1",
+      "storage": "1",
+      "varName": "MESSAGE_CONTENT",
       "name": "Replace Text"
     },
     {
@@ -1759,7 +1782,7 @@
     {
       "storage": "1",
       "varName": "help_VARIABLES",
-      "message": "**List Of Variables**\n\nYou could use these **Variables** inside the json _title, description, footer, etc._\n(**CASE SENSITIVE** upperCase Characters, Please write all variables in upperCase)\n\n**USER**\n`{USER}` - User Name\n`{@USER}` - Mention User\n`{USER.ID}` - User ID\n`{USER.NICK}` - User Nickname\n`{USER.TAG}` - User Tag (user#0000)\n`{USER.AVATAR}` - User Avatar URL\n`{USER.GAME}` - User Game\n`{USER.CUSTOMSTATUS}` - User Custom Status\n\n**SERVER**\n`{SERVER}` - Server Name\n`{SERVER.ID}` - Server ID\n`{SERVER.ICON}` - Server Icon\n`{SERVER.OWNER}` - Server Owner Name\n`{SERVER.MEMBER.COUNT}` - Server Member Size\n`{SERVER.ROLES.COUNT}` - Server Roles Size\n`{SERVER.CHANNELS.COUNT}` - Server Channels Size\n`{SERVER.BOTS.COUNT}` - Server Bots Size\n`{SERVER.CREATEDAT}` - Server Created Date\n`{SERVER.ROLE.LIST}` - Server Role List\n`{SERVER.CHANNEL.LIST}` - Server Channel List\n\n\n**CHANNEL**\n`{CHANNEL}` - Channel Name\n`{#CHANNEL}` - Mention Channel\n`{CHANNEL.ID}` - Channel ID\n`{CHANNEL.TOPIC}` - Channel Topic\n\n**TIMESTAMP**\n`{CURRENT_TIME}` - Current Time in Timestamp \n\n\n`{EVERYONE}` - Mention ``@everyone``\n`{HERE}` - Mention ``@here``\n\n``@everyone`` and ``@here`` is not going to work in **Embed**\n\n\n`{RANDOM_PERCENTAGE}` - Random Percentage 0 - 100%\n`{RANDOM_QUOTE}` - Random Quotes",
+      "message": "**List Of Variables**\n\nYou could use these **Variables** inside the json _title, description, footer, etc._\n(**CASE SENSITIVE** upperCase Characters, Please write all variables in upperCase)\n\n**USER**\n`{USER}` - User Name\n`{@USER}` - Mention User\n`{USER.ID}` - User ID\n`{USER.NICK}` - User Nickname\n`{USER.TAG}` - User Tag (user#0000)\n`{USER.AVATAR}` - User Avatar URL\n`{USER.GAME}` - User Game\n`{USER.CUSTOMSTATUS}` - User Custom Status\n\n**SERVER**\n`{SERVER}` - Server Name\n`{SERVER.ID}` - Server ID\n`{SERVER.ICON}` - Server Icon\n`{SERVER.OWNER}` - Server Owner Name\n`{SERVER.MEMBER.COUNT}` - Server Member Size\n`{SERVER.ROLES.COUNT}` - Server Roles Size\n`{SERVER.CHANNELS.COUNT}` - Server Channels Size\n`{SERVER.BOTS.COUNT}` - Server Bots Size\n`{SERVER.CREATEDAT}` - Server Created Date\n`{SERVER.ROLE.LIST}` - Server Role List\n`{SERVER.CHANNEL.LIST}` - Server Channel List\n\n\n**CHANNEL**\n`{CHANNEL}` - Channel Name\n`{#CHANNEL}` - Mention Channel\n`{CHANNEL.ID}` - Channel ID\n`{CHANNEL.TOPIC}` - Channel Topic\n\n**TIMESTAMP**\n`{CURRENT_TIME}` - Current Time in Timestamp \n\n\n`{EVERYONE}` - Mention ``@everyone``\n`{HERE}` - Mention ``@here``\n`<{@}userid>` Tag Specific User (Change userid with id of the member)\n\n``@everyone`` and ``@here`` is not going to work in **Embed**\n\n\n`{RANDOM_PERCENTAGE}` - Random Percentage 0 - 100%\n`{RANDOM_QUOTE}` - Random Quotes",
       "name": "Set Embed Description"
     },
     {
