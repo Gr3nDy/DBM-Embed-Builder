@@ -57,7 +57,7 @@ Heres a few guides that might come in handy; [Embeds|Discord.js](http://discordj
 <br>
 <br>
 If you are experiencing problem try to post it without `curly brackets` `{ }`
-<details><summary>Image</summary>
+<details><summary>Gif</summary>
 
 ![curly](./Screenshot/curlybrackets.gif)
 </details>
