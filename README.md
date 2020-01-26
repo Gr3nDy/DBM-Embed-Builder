@@ -54,3 +54,7 @@ DBM.
 If you like to use an online generator for json embed builder you can use; [Nadeko Embed Builder](https://eb.nadeko.bot)
 <br>
 Heres a few guides that might come in handy; [Embeds|Discord.js](http://discordjs.guide/popular-topics/embeds.html)
+<br>
+<br>
+If you are experiencing problem try to post it without `curly brackets` `{ }`
+![curly](./Screenshot/curlybrackets.gif)
