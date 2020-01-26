@@ -56,7 +56,7 @@ If you like to use an online generator for json embed builder you can use; [Nade
 Heres a few guides that might come in handy; [Embeds|Discord.js](http://discordjs.guide/popular-topics/embeds.html)
 <br>
 <br>
-If you are experiencing problem try to post it without `curly brackets` `{ }`
+If you are experiencing problem try to post it without `curly brackets` `{ }` on the first and the last letter of the message
 <details><summary>Gif</summary>
 
 ![curly](./Screenshot/curlybrackets.gif)
