@@ -1364,7 +1364,7 @@
       "comparison": "1",
       "value": "'[object Promise]'",
       "iftrue": "3",
-      "iftrueVal": "1",
+      "iftrueVal": "2",
       "iffalse": "0",
       "iffalseVal": "",
       "name": "Check Variable"
@@ -1374,7 +1374,7 @@
       "interpretation": "0",
       "code": "msg.channel.send({embed:{color:15158332,description:\"${member} Invalid Embed JSON\"}});\n",
       "storage": "1",
-      "varName": "invalid-embed",
+      "varName": "invalid-embed-log",
       "name": "Run Script"
     },
     {
@@ -1394,7 +1394,7 @@
     },
     {
       "storage": "1",
-      "varName": "invalid-embed",
+      "varName": "invalid-embed-log",
       "name": "Delete Message"
     },
     {
