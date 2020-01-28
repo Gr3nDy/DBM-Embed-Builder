@@ -1374,7 +1374,7 @@
       "interpretation": "0",
       "code": "msg.channel.send({embed:{color:15158332,description:\"${member} Invalid Embed JSON\"}});\n",
       "storage": "1",
-      "varName": "embed-end-log",
+      "varName": "invalid-embed",
       "name": "Run Script"
     },
     {
