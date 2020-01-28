@@ -1382,7 +1382,7 @@
     {
       "title": "",
       "author": "",
-      "color": "FFE74C3C",
+      "color": "#E74C3C",
       "url": "",
       "authorIcon": "",
       "authorUrl": "",
@@ -1404,7 +1404,7 @@
     {
       "storage": "1",
       "varName": "invalid-embed",
-      "message": "${member} Invalid Embed JSON",
+      "message": "${member} Invalid Embed JSON ",
       "name": "Set Embed Description"
     },
     {
