@@ -29,7 +29,7 @@ DBM.
 * A Few built in variables & colors that you could use 
 * Colors are in both decimal & hexadecimal
 * Plaintext (content message)
-* Simplified JSON for `image` and `url`
+* Simplified JSON for `image` and `thumbnail`
 
 
 # Changelogs
