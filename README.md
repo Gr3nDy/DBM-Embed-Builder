@@ -15,7 +15,7 @@ DBM.
 * 5.Click on save
 
 
-# Features
+# Usages
 <details><summary>Commands</summary>
 
 * `embed <embed>` | Create embed from json
