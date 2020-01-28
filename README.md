@@ -25,6 +25,13 @@ DBM.
 * `embed examples` | List of example format
 </details>
 
+# Features
+* A Few built in variables & colors that you could use 
+* Colors are in both decimal & hexadecimal
+* Plaintext (content message)
+* Simplified JSON for `image` and `url`
+
+
 # Changelogs
 
 <details><summary>1.1.1</summary>
