@@ -1342,8 +1342,8 @@
       "behavior": "0",
       "interpretation": "0",
       "code": "msg.channel.send(\"${tempVars(\"MESSAGE_CONTENT\")}\",{embed:{${tempVars(\"text\")}}});\n",
-      "storage": "0",
-      "varName": "",
+      "storage": "1",
+      "varName": "embed-end-log",
       "name": "Run Script"
     },
     {
@@ -1354,8 +1354,27 @@
       "behavior": "0",
       "interpretation": "0",
       "code": "msg.channel.send({embed:{${tempVars(\"text\")}}});\n",
-      "storage": "0",
-      "varName": "",
+      "storage": "1",
+      "varName": "embed-end-log",
+      "name": "Run Script"
+    },
+    {
+      "storage": "1",
+      "varName": "embed-end-log",
+      "comparison": "1",
+      "value": "'[object Promise]'",
+      "iftrue": "3",
+      "iftrueVal": "1",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "msg.channel.send({embed:{color:15158332,description:\"${member} Invalid Embed JSON\"}});\n",
+      "storage": "1",
+      "varName": "invalid-embed",
       "name": "Run Script"
     },
     {
@@ -1366,6 +1385,16 @@
     {
       "storage": "0",
       "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "time": "15",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "invalid-embed",
       "name": "Delete Message"
     },
     {
