@@ -1359,11 +1359,21 @@
       "name": "Run Script"
     },
     {
+      "time": "1",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
       "storage": "1",
       "varName": "embed-end-log",
       "comparison": "1",
       "value": "'[object Promise]'",
-      "iftrue": "3",
+      "iftrue": "1",
       "iftrueVal": "2",
       "iffalse": "0",
       "iffalseVal": "",
@@ -1376,16 +1386,6 @@
       "storage": "1",
       "varName": "invalid-embed-log",
       "name": "Run Script"
-    },
-    {
-      "time": "1",
-      "measurement": "1",
-      "name": "Wait"
-    },
-    {
-      "storage": "0",
-      "varName": "",
-      "name": "Delete Message"
     },
     {
       "time": "15",
