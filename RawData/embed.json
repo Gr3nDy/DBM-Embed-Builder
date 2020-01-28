@@ -1380,12 +1380,44 @@
       "name": "Check Variable"
     },
     {
-      "behavior": "0",
-      "interpretation": "0",
-      "code": "msg.channel.send({embed:{color:15158332,description:\"${member} Invalid Embed JSON\"}});\n",
+      "title": "",
+      "author": "",
+      "color": "15158332",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
       "storage": "1",
-      "varName": "embed-invalid",
-      "name": "Run Script"
+      "varName": "invalid-embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "invalid-embed",
+      "message": "${member} Invalid Embed JSON",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "invalid-embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
     },
     {
       "time": "5",
@@ -1394,7 +1426,7 @@
     },
     {
       "storage": "1",
-      "varName": "embed-invalid",
+      "varName": "invalid-embed",
       "name": "Delete Message"
     },
     {
