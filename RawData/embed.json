@@ -1384,17 +1384,17 @@
       "interpretation": "0",
       "code": "msg.channel.send({embed:{color:15158332,description:\"${member} Invalid Embed JSON\"}});\n",
       "storage": "1",
-      "varName": "invalid-embed-log",
+      "varName": "embed-invalid",
       "name": "Run Script"
     },
     {
-      "time": "15",
+      "time": "10",
       "measurement": "1",
       "name": "Wait"
     },
     {
       "storage": "1",
-      "varName": "invalid-embed-log",
+      "varName": "embed-invalid",
       "name": "Delete Message"
     },
     {
