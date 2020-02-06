@@ -61,6 +61,7 @@ DBM.
 
 * Added Random Color `{RANDOM_COLOR}`
 * Fixed Invalid `\` When creating new line
+* Fixed Invalid `\` When inserting double quotes
 </details>
 
 # Note
