@@ -34,13 +34,13 @@ DBM.
 
 # Changelogs
 
-<details><summary>1.1.1</summary>
+<details><summary>1.0.0</summary>
 
 * Added `embed help`
 * Bugs fixed
 </details>
 
-<details><summary>1.2.5</summary>
+<details><summary>1.0.2</summary>
 
 * Added `embed variables`
 * Added `embed colors`
@@ -48,13 +48,19 @@ DBM.
 * Bugs fixed
 </details>
 
-<details><summary>1.7.2</summary>
+<details><summary>1.0.4</summary>
 
 * More relaxed JSON
 * Thumbnail & Image both works with or without `{url:}`
 * Added more colors & variables
 * Added `plainText`
 * Bugs fixed
+</details>
+
+<details><summary>1.0.4</summary>
+
+* Added Random Color
+* Fixed Invalid `\`
 </details>
 
 # Note
