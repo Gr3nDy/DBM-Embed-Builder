@@ -60,7 +60,7 @@ DBM.
 <details><summary>1.0.6</summary>
 
 * Added Random Color
-* Fixed Invalid `\`
+* Fixed Invalid `\` When creating new line
 </details>
 
 # Note
