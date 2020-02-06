@@ -743,9 +743,18 @@
       "name": "Replace Text"
     },
     {
-      "comment": "{BS}",
+      "comment": "{BS}/{DQ} Back slash and Double Quotes",
       "color": "#ff00ff",
       "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "\\\"",
+      "text3": "{DQ}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
     },
     {
       "text": "${tempVars(\"text\")}",
@@ -1362,6 +1371,15 @@
     },
     {
       "text": "${tempVars(\"text\")}",
+      "text2": "{DQ}",
+      "text3": "\\\"",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
       "text2": "{BS}",
       "text3": "\\",
       "info": "1",
@@ -1377,17 +1395,8 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "3",
-      "iffalseVal": "3",
+      "iffalseVal": "2",
       "name": "Check Variable"
-    },
-    {
-      "text": "${tempVars(\"MESSAGE_CONTENT\")}",
-      "text2": "{BS}",
-      "text3": "\\",
-      "info": "1",
-      "storage": "1",
-      "varName": "MESSAGE_CONTENT",
-      "name": "Replace Text"
     },
     {
       "behavior": "0",
@@ -1847,7 +1856,7 @@
     {
       "storage": "1",
       "varName": "help_5",
-      "message": "**Image**\n`image:{url:\"https://image.com/IMAGE.png\"}`\n_or_\n`image:\"https://image.com/IMAGE.png\"`\n\n**Thumbnail**\n`thumbnail:{url:\"https://image.com/IMAGE.png\"}`\n_or_\n`thumbnail:\"https://image.com/IMAGE.png\"`\n\n**Footer**\n`footer:{text:\"THE TEXT\",icon_url:\"https://image.com/IMAGE.png\"}`\n\nYou can use `\\n` to create new line;\n`description:\"Line 1\\nLine 2\"`\n\n\n**if you wish to see a few example of how to do multiple format;**\n**Command:** `embed example`\n\n\nI'm sorry i couldn't include all the documentary into **Embed Builder**\nHelp section, i'm trying my best to make a simple guide for beginner.\nHowever if you wish to learn more about **Discord.js Embeds** You could go to this site;\n[Docs](https://discordjs.guide/popular-topics/embeds.html)\n\n-_GrenDy#2045_",
+      "message": "**Image**\n`image:{url:\"https://image.com/IMAGE.png\"}`\n_or_\n`image:\"https://image.com/IMAGE.png\"`\n\n**Thumbnail**\n`thumbnail:{url:\"https://image.com/IMAGE.png\"}`\n_or_\n`thumbnail:\"https://image.com/IMAGE.png\"`\n\n**Footer**\n`footer:{text:\"THE TEXT\",icon_url:\"https://image.com/IMAGE.png\"}`\n\nYou can use `\\n` to create new line;\n`description:\"Line 1\\nLine 2\"`\n\nYou can use `\\\"` to insert double quote;\n`description:\"text \\\"TEXT\\\" text\"`\n\n\n**if you wish to see a few example of how to do multiple format;**\n**Command:** `embed example`\n\n\nI'm sorry i couldn't include all the documentary into **Embed Builder**\nHelp section, i'm trying my best to make a simple guide for beginner.\nHowever if you wish to learn more about **Discord.js Embeds** You could go to this site;\n[Docs](https://discordjs.guide/popular-topics/embeds.html)\n\n-_GrenDy#2045_",
       "name": "Set Embed Description"
     },
     {
