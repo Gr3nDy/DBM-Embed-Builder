@@ -1361,17 +1361,6 @@
       "name": "Run Script"
     },
     {
-      "storage": "1",
-      "varName": "MESSAGE_CONTENT",
-      "comparison": "0",
-      "value": "",
-      "iftrue": "0",
-      "iftrueVal": "",
-      "iffalse": "3",
-      "iffalseVal": "4",
-      "name": "Check Variable"
-    },
-    {
       "text": "${tempVars(\"text\")}",
       "text2": "{BS}",
       "text3": "\\",
@@ -1379,6 +1368,17 @@
       "storage": "1",
       "varName": "text",
       "name": "Replace Text"
+    },
+    {
+      "storage": "1",
+      "varName": "MESSAGE_CONTENT",
+      "comparison": "0",
+      "value": "",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "3",
+      "name": "Check Variable"
     },
     {
       "text": "${tempVars(\"MESSAGE_CONTENT\")}",
@@ -1398,17 +1398,8 @@
       "name": "Run Script"
     },
     {
-      "count": "2",
+      "count": "1",
       "name": "Skip Actions"
-    },
-    {
-      "text": "${tempVars(\"text\")}",
-      "text2": "{BS}",
-      "text3": "\\",
-      "info": "1",
-      "storage": "1",
-      "varName": "text",
-      "name": "Replace Text"
     },
     {
       "behavior": "0",
