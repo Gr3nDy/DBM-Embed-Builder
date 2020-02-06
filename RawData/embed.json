@@ -743,6 +743,39 @@
       "name": "Replace Text"
     },
     {
+      "comment": "{BS}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "\\",
+      "text3": "{BS}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{RANDOM_COLOR}",
+      "color": "#c0c0c0",
+      "name": "Comment"
+    },
+    {
+      "storage": "1",
+      "varName": "RANDOM_COLOR",
+      "name": "Generate Random Hex Color"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{RANDOM_COLOR}",
+      "text3": "${tempVars(\"RANDOM_COLOR\")}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
       "comment": "[HEX_COLOR]",
       "color": "#8000ff",
       "name": "Comment"
@@ -1335,8 +1368,26 @@
       "iftrue": "0",
       "iftrueVal": "",
       "iffalse": "3",
-      "iffalseVal": "2",
+      "iffalseVal": "4",
       "name": "Check Variable"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{BS}",
+      "text3": "\\",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"MESSAGE_CONTENT\")}",
+      "text2": "{BS}",
+      "text3": "\\",
+      "info": "1",
+      "storage": "1",
+      "varName": "MESSAGE_CONTENT",
+      "name": "Replace Text"
     },
     {
       "behavior": "0",
@@ -1347,8 +1398,17 @@
       "name": "Run Script"
     },
     {
-      "count": "1",
+      "count": "2",
       "name": "Skip Actions"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{BS}",
+      "text3": "\\",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
     },
     {
       "behavior": "0",
@@ -1796,7 +1856,7 @@
     {
       "storage": "1",
       "varName": "help_5",
-      "message": "**Image**\n`image:{url:\"https://image.com/IMAGE.png\"}`\n_or_\n`image:\"https://image.com/IMAGE.png\"`\n\n**Thumbnail**\n`thumbnail:{url:\"https://image.com/IMAGE.png\"}`\n_or_\n`thumbnail:\"https://image.com/IMAGE.png\"`\n\n**Footer**\n`footer:{text:\"THE TEXT\",icon_url:\"https://image.com/IMAGE.png\"}`\n\n\n**if you wish to see a few example of how to do multiple format;**\n**Command:** `embed example`\n\n\nI'm sorry i couldn't include all the documentary into **Embed Builder**\nHelp section, i'm trying my best to make a simple guide for beginner.\nHowever if you wish to learn more about **Discord.js Embeds** You could go to this site;\n[Docs](https://discordjs.guide/popular-topics/embeds.html)\n\n-_GrenDy#2045_",
+      "message": "**Image**\n`image:{url:\"https://image.com/IMAGE.png\"}`\n_or_\n`image:\"https://image.com/IMAGE.png\"`\n\n**Thumbnail**\n`thumbnail:{url:\"https://image.com/IMAGE.png\"}`\n_or_\n`thumbnail:\"https://image.com/IMAGE.png\"`\n\n**Footer**\n`footer:{text:\"THE TEXT\",icon_url:\"https://image.com/IMAGE.png\"}`\n\nYou can use `\\n` to create new line;\n`description:\"Line 1\\nLine 2\n\n\n**if you wish to see a few example of how to do multiple format;**\n**Command:** `embed example`\n\n\nI'm sorry i couldn't include all the documentary into **Embed Builder**\nHelp section, i'm trying my best to make a simple guide for beginner.\nHowever if you wish to learn more about **Discord.js Embeds** You could go to this site;\n[Docs](https://discordjs.guide/popular-topics/embeds.html)\n\n-_GrenDy#2045_",
       "name": "Set Embed Description"
     },
     {
@@ -1901,7 +1961,7 @@
     {
       "storage": "1",
       "varName": "help_COLORS",
-      "message": "**List Of Colors**\n\nThese are list of available **Color Variable**\n\n`{RED}`\n`{WHITE}`\n`{BLACK}`\n`{GREEN}`\n`{LIME}`\n`{BLUE}`\n`{AQUA}`\n`{YELLOW}`\n`{PURPLE}`\n`{PINK}`\n`{ORANGE}`\n`{GRAY}`\n`{DARK_GRAY}`\n\nExample Usage;\n`color:{YELLOW}`\n\n`embed help 3` for more information\n",
+      "message": "**List Of Colors**\n\nThese are list of available **Color Variable**\n\n`{RED}`\n`{WHITE}`\n`{BLACK}`\n`{GREEN}`\n`{LIME}`\n`{BLUE}`\n`{AQUA}`\n`{YELLOW}`\n`{PURPLE}`\n`{PINK}`\n`{ORANGE}`\n`{GRAY}`\n`{DARK_GRAY}`\n`{RANDOM_COLOR}`\n\nExample Usage;\n`color:{YELLOW}`\n\n`embed help 3` for more information\n",
       "name": "Set Embed Description"
     },
     {
@@ -1967,6 +2027,11 @@
     },
     {
       "name": "End Action Sequence"
+    },
+    {
+      "comment": "JSON Embed Builder | release 1.0.6 | GrenDy",
+      "color": "#ff0000",
+      "name": "Comment"
     }
   ],
   "comType": "0",
