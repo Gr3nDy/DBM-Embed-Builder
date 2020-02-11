@@ -173,7 +173,7 @@
     {
       "storage": "1",
       "varName": "failed",
-      "message": "_Usage_ `embed <embed>`\n```js\ntitle:\"title\",\ncolor:#000000,\ndescription:\"description\",\nurl:\"https://example.com/\",\nauthor:{name:\"{USER}\",icon_url:\"{USER.AVATAR}\"},\ntimestamp:\"{CURRENT_TIME}\",\nfields:[{name:\"FIELD 1\",value:\"FIELD DESC 1\"}],\nthumbnail:{url:\"https://example.com/IMAGE.png\"},\nimage:{url:\"https://example.com/IMAGE.png\"},\nfooter:{text:\"TEXT\",icon_url:\"{SERVER.ICON}\"},\nfile: undefined,\nfiles: [] }\n```\n`embed help` for more information\n`embed variables` to see list of variables\n`embed colors` to see list of color variables\n`embed examples` to see list of example format",
+      "message": "_Usage_ `embed <embed>`\n```js\ntitle:\"title\",\ncolor:#000000,\ndescription:\"description\",\nurl:\"https://example.com/\",\nauthor:{name:\"{USER}\",icon_url:\"{USER.AVATAR}\"},\ntimestamp:\"{CURRENT_TIME}\",\nfields:[{name:\"FIELD 1\",value:\"FIELD DESC 1\"}],\nthumbnail:\"https://example.com/IMAGE.png\",\nimage:\"https://example.com/IMAGE.png\",\nfooter:{text:\"TEXT\",icon_url:\"{SERVER.ICON}\"}\n```\n`embed help` for more information\n`embed variables` to see list of variables\n`embed colors` to see list of color variables\n`embed examples` to see list of example format",
       "name": "Set Embed Description"
     },
     {
@@ -764,6 +764,19 @@
       "storage": "1",
       "varName": "text",
       "name": "Replace Text"
+    },
+    {
+      "comment": "{ALIASES}",
+      "color": "#8080c0",
+      "name": "Comment"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "const v = '${tempVars(\"text\")}';\nconst v1 = v.replace(/p:|pt:/, \"PLAINTEXT:\");\nconst v2 = v1.replace(/t:/, \"TITLE:\");\nconst v3 = v2.replace(/d:|desc:/, \"DESCRIPTION:\");\nconst v4 = v3.replace(/u:/, \"URL:\");\nconst v5 = v4.replace(/a:/, \"AUTHOR:\");\nconst v6 = v5.replace(/n:/g, \"NAME:\");\nconst v7 = v6.replace(/iu:|i_u:/g, \"ICON_URL:\");\nconst v8 = v7.replace(/c:/, \"COLOR:\");\nconst v9 = v8.replace(/ts:/, \"TIMESTAMP:\");\nconst v10 = v9.replace(/f:/g, \"FIELDS:\");\nconst v11 = v10.replace(/v:/g, \"VALUE:\");\nconst v12 = v11.replace(/il:/g, \"INLINE:\");\nconst v13 = v12.replace(/i:/, \"IMAGE:\");\nconst v14 = v13.replace(/th:/, \"THUMBNAIL:\");\nconst v15 = v14.replace(/ft:/, \"FOOTER:\");\nconst v16 = v15.replace(/txt:/, \"TEXT:\");\n\n// SECOND ROW\n\nconst v17 = v16.replace(/PLAINTEXT:/g, \"plaintext:\");\nconst v18 = v17.replace(/TITLE:/g, \"title:\");\nconst v19 = v18.replace(/DESCRIPTION:/g, \"description:\");\nconst v20 = v19.replace(/URL:/g, \"url:\");\nconst v21 = v20.replace(/AUTHOR:/g, \"author:\");\nconst v22 = v21.replace(/NAME:/g, \"name:\");\nconst v23 = v22.replace(/ICON_URL:/g, \"icon_url:\");\nconst v24 = v23.replace(/COLOR:/g, \"color:\");\nconst v25 = v24.replace(/TIMESTAMP:/g, \"timestamp:\");\nconst v26 = v25.replace(/FIELDS:/g, \"fields:\");\nconst v27 = v26.replace(/VALUE:/g, \"value:\");\nconst v28 = v27.replace(/INLINE:/g, \"inline:\");\nconst v29 = v28.replace(/IMAGE:/g, \"image:\");\nconst v30 = v29.replace(/THUMBNAIL:/g, \"thumbnail:\");\nconst v31 = v30.replace(/FOOTER:/g, \"footer:\");\n\n// Result\nconst v32 = v31.replace(/TEXT:/g, \"text:\");\nconst result = v32\nresult",
+      "storage": "1",
+      "varName": "text",
+      "name": "Run Script"
     },
     {
       "comment": "{RANDOM_COLOR}",
@@ -1650,7 +1663,7 @@
     {
       "storage": "1",
       "varName": "help_1",
-      "message": "Create **Custom Embed** in **Discord**\n\nThis command allows you to create custom embed from json format \nhere's a few step to do it if you're new to discord embed\n\nAlways use `\" \"` between the text if it's string/text\nfor an example you don't have to use it with color,timestamp,etc.\n\n**Command**: `embed <embed>`\n\n**Plaintext**\n`plaintext:\"TEXT\"`\n\n**Title**\n`title:\"THE TITLE\"`\n\n**Description**\n`description:\"THE DESCRIPTION\"`\n\n**Title + Description**\n`title:\"THE TITLE\",description:\"THE DESCRIPTION\"`\n\n**Title + URL**\n`title:\"THE TITLE\",url:\"\"https://example.com/\"`",
+      "message": "Create **Custom Embed** in **Discord**\n\nThis command allows you to create custom embed from json format \nhere's a few step to do it if you're new to discord embed\n\nAlways use `\" \"` between the text if it's string/text\nfor an example you don't have to use it with color,timestamp,etc.\n\n**Command**: `embed <embed>`\n\n**Plaintext**\n_aliases:_ `pt:`\n`plaintext:\"TEXT\"`\n\n**Title**\n_aliases:_ `t:`\n`title:\"THE TITLE\"`\n\n**Description**\n_aliases:_ `d:`/`desc:`\n`description:\"THE DESCRIPTION\"`\n\n**Title + Description**\n_aliases:_ `t:` | `d:`\n`title:\"THE TITLE\",description:\"THE DESCRIPTION\"`\n\n**Title + URL**\n_aliases:_ `t:` | `u:`\n`title:\"THE TITLE\",url:\"\"https://example.com/\"`",
       "name": "Set Embed Description"
     },
     {
@@ -1706,7 +1719,7 @@
     {
       "storage": "1",
       "varName": "help_2",
-      "message": "**Author (Name)**\n`author:{name:\"USERNAME\"}`\n\n**Author (Name + Icon + Url)** \n`author:{name:\"USERNAME\",icon_url:\"https://image.com/image.png\",url:\"https://example.net/\"}`\n\nIf you wish to automatically use your name and your avatar you could\nuse built in **Variables** in **Embed Builder**, this is how it's done;\n`author:{name:\"{USER}\",icon_url:\"{USER.AVATAR}\"}`\n\n\n**SEE LIST OF AVAILABLE VARIABLES**\n**Command:** `embed variable`\n\nyou can also use the built in **Embed Builder** variables title, description, thumbnail, etc.",
+      "message": "**Author (Name)**\n_aliases:_ `a:` | `n:`\n`author:{name:\"USERNAME\"}`\n\n**Author (Name + Icon + Url)** \n_aliases:_ `a:` | `n:` | `iu:`/`i_u:`\n`author:{name:\"USERNAME\",icon_url:\"https://image.com/image.png\",url:\"https://example.net/\"}`\n\nIf you wish to automatically use your name and your avatar you could\nuse built in **Variables** in **Embed Builder**, this is how it's done;\n`author:{name:\"{USER}\",icon_url:\"{USER.AVATAR}\"}`\n\n\n**SEE LIST OF AVAILABLE VARIABLES**\n**Command:** `embed variable`\n\nyou can also use the built in **Embed Builder** variables title, description, thumbnail, etc.",
       "name": "Set Embed Description"
     },
     {
@@ -1762,7 +1775,7 @@
     {
       "storage": "1",
       "varName": "help_3",
-      "message": "**Color**\n`color:#000000`\n\n**Description + Color**\n`description:\"THE DESCRIPTION\",color:#000000`\n\nfor **Color** you don't have to put `\" \"` between the input\n\n**Color** is using **decimal** however if you wish to use **hexadecimal**\nplease put `#` before the hexadecimal for an example; `#fffb00`\n\nIf you think it's too much work **Embed Builder** is also has built in **Color Variables**\nthis is how it's done (the color variables are limited);\n`description:\"THE DESCRIPTION\",color:{RED}`\n\n\n**SEE LIST OF AVAILABLE VARIABLES**\n**Command:** `embed color`\n\n\n",
+      "message": "**Color**\n_aliases:_ `c:`\n`color:#000000`\n\n**Description + Color**\n_aliases:_ `d:` | `c:`\n`description:\"THE DESCRIPTION\",color:#000000`\n\nfor **Color** you don't have to put `\" \"` between the input\n\n**Color** is using **decimal** however if you wish to use **hexadecimal**\nplease put `#` before the hexadecimal for an example; `#fffb00`\n\nIf you think it's too much work **Embed Builder** is also has built in **Color Variables**\nthis is how it's done (the color variables are limited);\n`description:\"THE DESCRIPTION\",color:{RED}`\n\n\n**SEE LIST OF AVAILABLE VARIABLES**\n**Command:** `embed color`\n\n\n",
       "name": "Set Embed Description"
     },
     {
@@ -1818,7 +1831,7 @@
     {
       "storage": "1",
       "varName": "help_4",
-      "message": "**Timestamp**\n`timestamp:{CURRENT_TIME}`\n\n**Title + Description + Timestamp**\n`title:\"THE TITLE\",description:\"THE DESCRIPTION\",timestamp:{CURRENT_TIME}`\n\nfor timestamp you could just use `{CURRENT_TIME}` variable to make things easier\n\n\n\n**Add Field**\n`fields:[{name:\"THE TITLE\",value:\"THE DESCRIPTION\"}]`\n\n**Add Field 2**\n`fields:[{name:\"THE TITLE\",value:\"THE DESCRIPTION\"},{name:\"THE TITLE 2\",value:\"THE DESCRIPTION 2\"}]`\n\n**Add Field (InLine)**\n`fields:[{name:\"THE TITLE\",value:\"THE DESCRIPTION\",inline:true},{name:\"THE TITLE 2\",value:\"THE DESCRIPTION 2\",inline: true}]`\n\nyou can add embed fields up to **25** fields\nuse `inline:true` to show them inline\n\n\n",
+      "message": "**Timestamp**\n_aliases:_ `ts:`\n`timestamp:{CURRENT_TIME}`\n\n**Title + Description + Timestamp**\n_aliases:_ `t:` | `d:` | `ts:`\n`title:\"THE TITLE\",description:\"THE DESCRIPTION\",timestamp:{CURRENT_TIME}`\n\nfor timestamp you could just use `{CURRENT_TIME}` variable to make things easier\n\n\n\n**Add Field**\n_aliases:_ `f:` | `n:` | `v:`\n`fields:[{name:\"THE TITLE\",value:\"THE DESCRIPTION\"}]`\n\n**Add Field 2**\n_aliases:_ `f:` | `n:` | `v:`\n`fields:[{name:\"THE TITLE\",value:\"THE DESCRIPTION\"},{name:\"THE TITLE 2\",value:\"THE DESCRIPTION 2\"}]`\n\n**Add Field (InLine)**\n_aliases:_ `f:` |`n:` | `v:` | `il:`\n`fields:[{name:\"THE TITLE\",value:\"THE DESCRIPTION\",inline:true},{name:\"THE TITLE 2\",value:\"THE DESCRIPTION 2\",inline: true}]`\n\nyou can add embed fields up to **25** fields\nuse `inline:true` to show them inline\n\n\n",
       "name": "Set Embed Description"
     },
     {
@@ -1874,7 +1887,7 @@
     {
       "storage": "1",
       "varName": "help_5",
-      "message": "**Image**\n`image:{url:\"https://image.com/IMAGE.png\"}`\n_or_\n`image:\"https://image.com/IMAGE.png\"`\n\n**Thumbnail**\n`thumbnail:{url:\"https://image.com/IMAGE.png\"}`\n_or_\n`thumbnail:\"https://image.com/IMAGE.png\"`\n\n**Footer**\n`footer:{text:\"THE TEXT\",icon_url:\"https://image.com/IMAGE.png\"}`\n\nYou can use `\\n` to create new line;\n`description:\"Line 1\\nLine 2\"`\n\nYou can use `\\\"` to insert double quote;\n`description:\"text \\\"TEXT\\\" text\"`\n\n\n**if you wish to see a few example of how to do multiple format;**\n**Command:** `embed example`\n\n\nI'm sorry i couldn't include all the documentary into **Embed Builder**\nHelp section, i'm trying my best to make a simple guide for beginner.\nHowever if you wish to learn more about **Discord.js Embeds** You could go to this site;\n[Docs](https://discordjs.guide/popular-topics/embeds.html)\n\n-_GrenDy#2045_",
+      "message": "**Image**\n_aliases:_ `i:`\n`image:{url:\"https://image.com/IMAGE.png\"}`\n_or_\n`image:\"https://image.com/IMAGE.png\"`\n\n**Thumbnail**\n_aliases:_ `th:`\n`thumbnail:{url:\"https://image.com/IMAGE.png\"}`\n_or_\n`thumbnail:\"https://image.com/IMAGE.png\"`\n\n**Footer**\n_aliases:_ `ft:` | `t:` | `iu:`/`i_u:`\n`footer:{text:\"THE TEXT\",icon_url:\"https://image.com/IMAGE.png\"}`\n\nYou can use `\\n` to create new line;\n`description:\"Line 1\\nLine 2\"`\n\nYou can use `\\\"` to insert double quote;\n`description:\"text \\\"TEXT\\\" text\"`\n\n\n**if you wish to see a few example of how to do multiple format;**\n**Command:** `embed example`\n\n\nI'm sorry i couldn't include all the documentary into **Embed Builder**\nHelp section, i'm trying my best to make a simple guide for beginner.\nHowever if you wish to learn more about **Discord.js Embeds** You could go to this site;\n[Docs](https://discordjs.guide/popular-topics/embeds.html)\n\n-_GrenDy#2045_",
       "name": "Set Embed Description"
     },
     {
@@ -2047,7 +2060,7 @@
       "name": "End Action Sequence"
     },
     {
-      "comment": "JSON Embed Builder | release 1.0.6 | GrenDy",
+      "comment": "JSON Embed Builder | release 1.0.9 | GrenDy",
       "color": "#ff0000",
       "name": "Comment"
     }
