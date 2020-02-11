@@ -64,6 +64,10 @@ DBM.
 * Fixed Invalid `\` When inserting double quotes
 </details>
 
+<details><summary>1.0.9</summary>
+* Added Aliases (Embed help for more info)
+</details>
+
 # Note
 Make sure you've installed <em>betamods</em> on your DBM
 <br>
