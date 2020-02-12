@@ -1,7 +1,5 @@
 # ![app icon](./Screenshot/EB.png) [DBM] JSON Embed Builder
-[![release](https://img.shields.io/static/v1?label=release&message=1.0.9&color=red)](https://github.com/Gr3nDy/DBM-Embed-Builder/)
-
-**CURRENTLY ON FIX COME BACK LATER**
+[![release](https://img.shields.io/static/v1?label=release&message=1.0.7&color=red)](https://github.com/Gr3nDy/DBM-Embed-Builder/)
 
 Create **Embed** inside **Discord**
 ![gif](./Screenshot/GIF.gif)
@@ -64,10 +62,6 @@ DBM.
 * Added Random Color `{RANDOM_COLOR}`
 * Fixed Invalid `\` When creating new line
 * Fixed Invalid `\` When inserting double quotes
-</details>
-
-<details><summary>1.0.9</summary>
-* Added Aliases (Embed help for more info)
 </details>
 
 # Note
