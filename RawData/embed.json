@@ -51,6 +51,19 @@
       "name": "End Action Sequence"
     },
     {
+      "comment": "↓ ALIASES PREFIX ↓",
+      "color": "#8080ff",
+      "name": "Comment"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "\"-\"\n\n// YOU MAY CHANGE BUT DO NOT REMOVE/LEAVE IT EMPTY\n// THIS IS ALIASES PREFIX",
+      "storage": "1",
+      "varName": "ap",
+      "name": "Run Script"
+    },
+    {
       "info": "0",
       "infoIndex": "1",
       "storage": "1",
@@ -771,13 +784,31 @@
       "name": "Comment"
     },
     {
-      "text": "${tempVars(\"text\")}",
-      "text2": "desc:\"",
-      "text3": "description:\"",
-      "info": "0",
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "\"/${tempVars(\"ap\")}P|${tempVars(\"ap\")}PT:|${tempVars(\"ap\")}T:|${tempVars(\"ap\")}D:|${tempVars(\"ap\")}desc:|${tempVars(\"ap\")}U:|${tempVars(\"ap\")}A:|${tempVars(\"ap\")}N:|${tempVars(\"ap\")}IU:|${tempVars(\"ap\")}I_U:|${tempVars(\"ap\")}C:|${tempVars(\"ap\")}TS:|${tempVars(\"ap\")}F:|${tempVars(\"ap\")}V:|${tempVars(\"ap\")}IL:|${tempVars(\"ap\")}I:|${tempVars(\"ap\")}TH:|${tempVars(\"ap\")}TN:|${tempVars(\"ap\")}FT:|${tempVars(\"ap\")}TXT:/i\"\n\n// DO NOT CHANGE",
+      "storage": "1",
+      "varName": "apcheck",
+      "name": "Run Script"
+    },
+    {
       "storage": "1",
       "varName": "text",
-      "name": "Replace Text"
+      "comparison": "12",
+      "value": "${tempVars(\"apcheck\")}",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "1",
+      "name": "Check Variable"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "const v = '${tempVars(\"text\")}';\nconst v1 = v.replace(/${tempVars(\"ap\")}P:|${tempVars(\"ap\")}PT:/i, \"plaintext:\");\nconst v2 = v1.replace(/${tempVars(\"ap\")}T:/i, \"title:\");\nconst v3 = v2.replace(/${tempVars(\"ap\")}D:|${tempVars(\"ap\")}desc:/i, \"description:\");\nconst v4 = v3.replace(/${tempVars(\"ap\")}U:/i, \"url:\");\nconst v5 = v4.replace(/${tempVars(\"ap\")}A:/i, \"author:\");\nconst v6 = v5.replace(/${tempVars(\"ap\")}N:/gi, \"name:\");\nconst v7 = v6.replace(/${tempVars(\"ap\")}IU:|${tempVars(\"ap\")}I_U:/gi, \"icon_url:\");\nconst v8 = v7.replace(/${tempVars(\"ap\")}C:/i, \"color:\");\nconst v9 = v8.replace(/${tempVars(\"ap\")}TS:/i, \"timestamp:\");\nconst v10 = v9.replace(/${tempVars(\"ap\")}F:/gi, \"fields:\");\nconst v11 = v10.replace(/${tempVars(\"ap\")}V:/gi, \"value:\");\nconst v12 = v11.replace(/${tempVars(\"ap\")}IL:/gi, \"inline:\");\nconst v13 = v12.replace(/${tempVars(\"ap\")}I:/i, \"image:\");\nconst v14 = v13.replace(/${tempVars(\"ap\")}TH:|${tempVars(\"ap\")}TN:/i, \"thumbnail:\");\nconst v15 = v14.replace(/${tempVars(\"ap\")}FT:/i, \"footer:\");\nconst v16 = v15.replace(/${tempVars(\"ap\")}TXT:/gi, \"text:\");\nconst result = v16\nresult ",
+      "storage": "1",
+      "varName": "text",
+      "name": "Run Script"
     },
     {
       "comment": "{RANDOM_COLOR}",
@@ -1646,7 +1677,7 @@
     {
       "storage": "1",
       "varName": "help_1",
-      "message": "Create **Custom Embed** in **Discord**\n\nThis command allows you to create custom embed from json format \nhere's a few step to do it if you're new to discord embed\n\nAlways use `\" \"` between the text if it's string/text\nfor an example you don't have to use it with color,timestamp,etc.\n\n**Command**: `embed <embed>`\n\n**Plaintext**\n`plaintext:\"TEXT\"`\n\n**Title**\n`title:\"THE TITLE\"`\n\n**Description**\n`description:\"THE DESCRIPTION\"`\n\n**Title + Description**\n`title:\"THE TITLE\",description:\"THE DESCRIPTION\"`\n\n**Title + URL**\n`title:\"THE TITLE\",url:\"\"https://example.com/\"`",
+      "message": "Create **Custom Embed** in **Discord**\n\nThis command allows you to create custom embed from json format \nhere's a few step to do it if you're new to discord embed\n\nAlways use `\" \"` between the text if it's string/text\nfor an example you don't have to use it with color,timestamp,etc.\n\n**Command**: `embed <embed>`\n\n**Plaintext**\n_aliases:_ `${tempVars(\"ap\")}pt:`\n`plaintext:\"TEXT\"`\n\n**Title**\n_aliases:_ `${tempVars(\"ap\")}t:`\n`title:\"THE TITLE\"`\n\n**Description**\n_aliases:_ `${tempVars(\"ap\")}d:`\n`description:\"THE DESCRIPTION\"`\n\n**Title + Description**\n_aliases:_ `${tempVars(\"ap\")}t:,${tempVars(\"ap\")}d:`\n`title:\"THE TITLE\",description:\"THE DESCRIPTION\"`\n\n**Title + URL**\n_aliases:_ `${tempVars(\"ap\")}t:,${tempVars(\"ap\")}u:`\n`title:\"THE TITLE\",url:\"\"https://example.com/\"`",
       "name": "Set Embed Description"
     },
     {
@@ -1702,7 +1733,7 @@
     {
       "storage": "1",
       "varName": "help_2",
-      "message": "**Author (Name)**\n`author:{name:\"USERNAME\"}`\n\n**Author (Name + Icon + Url)** \n`author:{name:\"USERNAME\",icon_url:\"https://image.com/image.png\",url:\"https://example.net/\"}`\n\nIf you wish to automatically use your name and your avatar you could\nuse built in **Variables** in **Embed Builder**, this is how it's done;\n`author:{name:\"{USER}\",icon_url:\"{USER.AVATAR}\"}`\n\n\n**SEE LIST OF AVAILABLE VARIABLES**\n**Command:** `embed variable`\n\nyou can also use the built in **Embed Builder** variables title, description, thumbnail, etc.",
+      "message": "**Author (Name)**\n_aliases:_ `${tempVars(\"ap\")}a:{${tempVars(\"ap\")}n:}`\n`author:{name:\"USERNAME\"}`\n\n**Author (Name + Icon + Url)** \n_aliases:_ `${tempVars(\"ap\")}a:{${tempVars(\"ap\")}n:,${tempVars(\"ap\")}iu:,${tempVars(\"ap\")}u:}`\n`author:{name:\"USERNAME\",icon_url:\"https://image.com/image.png\",url:\"https://example.net/\"}`\n\nIf you wish to automatically use your name and your avatar you could\nuse built in **Variables** in **Embed Builder**, this is how it's done;\n`author:{name:\"{USER}\",icon_url:\"{USER.AVATAR}\"}`\n\n\n**SEE LIST OF AVAILABLE VARIABLES**\n**Command:** `embed variable`\n\nyou can also use the built in **Embed Builder** variables title, description, thumbnail, etc.",
       "name": "Set Embed Description"
     },
     {
@@ -1758,7 +1789,7 @@
     {
       "storage": "1",
       "varName": "help_3",
-      "message": "**Color**\n`color:#000000`\n\n**Description + Color**\n`description:\"THE DESCRIPTION\",color:#000000`\n\nfor **Color** you don't have to put `\" \"` between the input\n\n**Color** is using **decimal** however if you wish to use **hexadecimal**\nplease put `#` before the hexadecimal for an example; `#fffb00`\n\nIf you think it's too much work **Embed Builder** is also has built in **Color Variables**\nthis is how it's done (the color variables are limited);\n`description:\"THE DESCRIPTION\",color:{RED}`\n\n\n**SEE LIST OF AVAILABLE VARIABLES**\n**Command:** `embed color`\n\n\n",
+      "message": "**Color**\n_aliases:_ `${tempVars(\"ap\")}c:`\n`color:#000000`\n\n**Description + Color**\n_aliases:_ `${tempVars(\"ap\")}d:,${tempVars(\"ap\")}c:`\n`description:\"THE DESCRIPTION\",color:#000000`\n\nfor **Color** you don't have to put `\" \"` between the input\n\n**Color** is using **decimal** however if you wish to use **hexadecimal**\nplease put `#` before the hexadecimal for an example; `#fffb00`\n\nIf you think it's too much work **Embed Builder** is also has built in **Color Variables**\nthis is how it's done (the color variables are limited);\n`description:\"THE DESCRIPTION\",color:{RED}`\n\n\n**SEE LIST OF AVAILABLE VARIABLES**\n**Command:** `embed color`\n\n\n",
       "name": "Set Embed Description"
     },
     {
@@ -1814,7 +1845,7 @@
     {
       "storage": "1",
       "varName": "help_4",
-      "message": "**Timestamp**\n`timestamp:{CURRENT_TIME}`\n\n**Title + Description + Timestamp**\n`title:\"THE TITLE\",description:\"THE DESCRIPTION\",timestamp:{CURRENT_TIME}`\n\nfor timestamp you could just use `{CURRENT_TIME}` variable to make things easier\n\n\n\n**Add Field**\n`fields:[{name:\"THE TITLE\",value:\"THE DESCRIPTION\"}]`\n\n**Add Field 2**\n`fields:[{name:\"THE TITLE\",value:\"THE DESCRIPTION\"},{name:\"THE TITLE 2\",value:\"THE DESCRIPTION 2\"}]`\n\n**Add Field (InLine)**\n`fields:[{name:\"THE TITLE\",value:\"THE DESCRIPTION\",inline:true},{name:\"THE TITLE 2\",value:\"THE DESCRIPTION 2\",inline: true}]`\n\nyou can add embed fields up to **25** fields\nuse `inline:true` to show them inline\n\n\n",
+      "message": "**Timestamp**\n_aliases:_ `${tempVars(\"ap\")}ts:`\n`timestamp:{CURRENT_TIME}`\n\n**Title + Description + Timestamp**\n_aliases:_ `${tempVars(\"ap\")}t:,${tempVars(\"ap\")}d:,${tempVars(\"ap\")}ts:`\n`title:\"THE TITLE\",description:\"THE DESCRIPTION\",timestamp:{CURRENT_TIME}`\n\nfor timestamp you could just use `{CURRENT_TIME}` variable to make things easier\n\n\n\n**Add Field**\n_aliases:_ `${tempVars(\"ap\")}f:[{${tempVars(\"ap\")}n:,${tempVars(\"ap\")}v:}]`\n`fields:[{name:\"THE TITLE\",value:\"THE DESCRIPTION\"}]`\n\n**Add Field 2**\n_aliases:_ `${tempVars(\"ap\")}f:[{${tempVars(\"ap\")}n:,${tempVars(\"ap\")}v:}],[{${tempVars(\"ap\")}n:,${tempVars(\"ap\")}v:}]`\n`fields:[{name:\"THE TITLE\",value:\"THE DESCRIPTION\"},{name:\"THE TITLE 2\",value:\"THE DESCRIPTION 2\"}]`\n\n**Add Field (InLine)**\n_aliases:_ `${tempVars(\"ap\")}f:[{${tempVars(\"ap\")}n:,${tempVars(\"ap\")}v:,${tempVars(\"ap\")}il:}],[{${tempVars(\"ap\")}n:,${tempVars(\"ap\")}v:,${tempVars(\"ap\")}il:}]`\n`fields:[{name:\"THE TITLE\",value:\"THE DESCRIPTION\",inline:true},{name:\"THE TITLE 2\",value:\"THE DESCRIPTION 2\",inline: true}]`\n\nyou can add embed fields up to **25** fields\nuse `inline:true` to show them inline\n\n\n",
       "name": "Set Embed Description"
     },
     {
@@ -1870,7 +1901,7 @@
     {
       "storage": "1",
       "varName": "help_5",
-      "message": "**Image**\n`image:{url:\"https://image.com/IMAGE.png\"}`\n_or_\n`image:\"https://image.com/IMAGE.png\"`\n\n**Thumbnail**\n`thumbnail:{url:\"https://image.com/IMAGE.png\"}`\n_or_\n`thumbnail:\"https://image.com/IMAGE.png\"`\n\n**Footer**\n`footer:{text:\"THE TEXT\",icon_url:\"https://image.com/IMAGE.png\"}`\n\nYou can use `\\n` to create new line;\n`description:\"Line 1\\nLine 2\"`\n\nYou can use `\\\"` to insert double quote;\n`description:\"text \\\"TEXT\\\" text\"`\n\n\n**if you wish to see a few example of how to do multiple format;**\n**Command:** `embed example`\n\n\nI'm sorry i couldn't include all the documentary into **Embed Builder**\nHelp section, i'm trying my best to make a simple guide for beginner.\nHowever if you wish to learn more about **Discord.js Embeds** You could go to this site;\n[Docs](https://discordjs.guide/popular-topics/embeds.html)\n\n-_GrenDy#2045_",
+      "message": "**Image**\n_aliases:_ `${tempVars(\"ap\")}i:`\n`image:{url:\"https://image.com/IMAGE.png\"}`\n_or_\n`image:\"https://image.com/IMAGE.png\"`\n\n**Thumbnail**\n_aliases:_ `${tempVars(\"ap\")}th:/${tempVars(\"ap\")}tn:`\n`thumbnail:{url:\"https://image.com/IMAGE.png\"}`\n_or_\n`thumbnail:\"https://image.com/IMAGE.png\"`\n\n**Footer**\n_aliases:_ `${tempVars(\"ap\")}ft:{${tempVars(\"ap\")}txt:,${tempVars(\"ap\")}iu:`\n`footer:{text:\"THE TEXT\",icon_url:\"https://image.com/IMAGE.png\"}`\n\nYou can use `\\\\n` to create new line;\n`description:\"Line 1 \\\\nLine 2\"`\n\nYou can use `\\\\\"` to insert double quote;\n`description:\"text \\\\\"TEXT \\\\\" text\"`\n\n\n**if you wish to see a few example of how to do multiple format;**\n**Command:** `embed example`\n\n\nI'm sorry i couldn't include all the documentary into **Embed Builder**\nHelp section, i'm trying my best to make a simple guide for beginner.\nHowever if you wish to learn more about **Discord.js Embeds** You could go to this site;\n[Docs](https://discordjs.guide/popular-topics/embeds.html)\n\n-_GrenDy#2045_",
       "name": "Set Embed Description"
     },
     {
@@ -2024,7 +2055,7 @@
     {
       "storage": "1",
       "varName": "help_EXAMPLE",
-      "message": "**JSON Example**\n\n```title:\"Welcome To The Server\",description:\"Hi @john welcome to {SERVER}\",author:{name:\"{USER}\",icon_url:\"{USER.AVATAR}\"},color:#7c6e9c,timestamp:{CURRENT_TIME}```\n\n```title:\"Announcement\",description:\"Tomorrow were going to roll the giveaway winner\",thumbnail:{url:\"{SERVER.ICON}\"},color:{RED},footer:{text:\"{USER.TAG}\",icon_url:\"{USER.AVATAR}\"}```\n\n```description:\"Shout out to my friend @xxgamerslayer3000xx for giving me food n stuff\",fields:[{name:\"Note\",value:\"i don't actually like john\"}]```\n\n\n",
+      "message": "**JSON Example**\n\n\n```title:\"Welcome To The Server\",description:\"Hi @john welcome to {SERVER}\",author:{name:\"{USER}\",icon_url:\"{USER.AVATAR}\"},color:#7c6e9c,timestamp:{CURRENT_TIME}```\n\n```title:\"Announcement\",description:\"Tomorrow were going to roll the giveaway winner\",thumbnail:{url:\"{SERVER.ICON}\"},color:{RED},footer:{text:\"{USER.TAG}\",icon_url:\"{USER.AVATAR}\"}```\n\n```description:\"Shout out to my friend @xxgamerslayer3000xx for giving me food n stuff\",fields:[{name:\"Note\",value:\"i don't actually like john\"}]```\n\n```${tempVars(\"ap\")}pt:\"ROUND TABLE\",${tempVars(\"ap\")}t:\"Question 1\",${tempVars(\"ap\")}d:\"What does the text tell us about?\",${tempVars(\"ap\")}c:{RANDOM_COLOR}```",
       "name": "Set Embed Description"
     },
     {
@@ -2043,7 +2074,7 @@
       "name": "End Action Sequence"
     },
     {
-      "comment": "JSON Embed Builder | release 1.0.7 | GrenDy",
+      "comment": "JSON Embed Builder | release 1.0.8 | GrenDy",
       "color": "#ff0000",
       "name": "Comment"
     }

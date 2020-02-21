@@ -1,0 +1,2056 @@
+{
+  "name": "embed",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "EpSbv",
+  "actions": [
+    {
+      "comment": "↓ PERMISSION ↓",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "permission": "ADMINISTRATOR",
+      "iftrue": "3",
+      "iftrueVal": "6",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Member Permissions"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "msg.channel.send({embed:{color:15158332,description:\"${member} You don't have permission to do that!\"}});\n",
+      "storage": "1",
+      "varName": "msg0",
+      "name": "Run Script"
+    },
+    {
+      "time": "1",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "0",
+      "varName": "msg0",
+      "name": "Delete Message"
+    },
+    {
+      "time": "10",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "msg0",
+      "name": "Delete Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "type",
+      "name": "Store Command Params"
+    },
+    {
+      "storage": "1",
+      "varName": "type",
+      "comparison": "6",
+      "value": "(help)",
+      "iftrue": "3",
+      "iftrueVal": "6",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "type",
+      "comparison": "6",
+      "value": "(variable|variables)",
+      "iftrue": "3",
+      "iftrueVal": "6",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "type",
+      "comparison": "6",
+      "value": "(color|colors|colour|colours)",
+      "iftrue": "3",
+      "iftrueVal": "6",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "type",
+      "comparison": "6",
+      "value": "(example|examples)",
+      "iftrue": "3",
+      "iftrueVal": "6",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Store Command Params"
+    },
+    {
+      "condition": "0",
+      "comparison": "0",
+      "value": "0",
+      "iftrue": "3",
+      "iftrueVal": "5",
+      "iffalse": "0",
+      "iffalseVal": "8",
+      "name": "Check Parameters"
+    },
+    {
+      "description": "Jump To EMBED",
+      "jump_to_anchor": "1",
+      "color": "#400080",
+      "name": "Jump to Anchor"
+    },
+    {
+      "description": "Jump To HELP",
+      "jump_to_anchor": "2",
+      "color": "#ff0000",
+      "name": "Jump to Anchor"
+    },
+    {
+      "description": "Jump To HELP VARIABLES",
+      "jump_to_anchor": "8",
+      "color": "#804040",
+      "name": "Jump to Anchor"
+    },
+    {
+      "description": "Jump To HELP COLORS",
+      "jump_to_anchor": "9",
+      "color": "#800000",
+      "name": "Jump to Anchor"
+    },
+    {
+      "description": "Jump To HELP EXAMPLE",
+      "jump_to_anchor": "10",
+      "color": "#804000",
+      "name": "Jump to Anchor"
+    },
+    {
+      "title": "Embed Builder",
+      "author": "",
+      "color": "RED",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "failed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "failed",
+      "message": "_Usage_ `embed <embed>`\n```js\ntitle:\"title\",\ncolor:#000000,\ndescription:\"description\",\nurl:\"https://example.com/\",\nauthor:{name:\"{USER}\",icon_url:\"{USER.AVATAR}\"},\ntimestamp:\"{CURRENT_TIME}\",\nfields:[{name:\"FIELD 1\",value:\"FIELD DESC 1\"}],\nthumbnail:\"https://example.com/IMAGE.png\",\nimage:\"https://example.com/IMAGE.png\",\nfooter:{text:\"TEXT\",icon_url:\"{SERVER.ICON}\"}\n```\n`embed help` for more information\n`embed variables` to see list of variables\n`embed colors` to see list of color variables\n`embed examples` to see list of example format",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "failed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "1",
+      "varName3": "failed",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "time": "1",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "time": "30",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "failed",
+      "name": "Delete Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "anchor_id": "1",
+      "color": "#400080",
+      "description": "EMBED",
+      "name": "Create Anchor"
+    },
+    {
+      "comment": "[VARIABLE]",
+      "color": "#004080",
+      "name": "Comment"
+    },
+    {
+      "comment": "{USER}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{USER}",
+      "text3": "${msg.author.username}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{USER.ID}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{USER.ID}",
+      "text3": "${msg.author.id}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{USER.NICK}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{USER.NICK}",
+      "text3": "${member.displayName}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{USER.TAG}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{USER.TAG}",
+      "text3": "${msg.author.tag}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{USER.AVATAR}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{USER.AVATAR}",
+      "text3": "${msg.author.avatarURL}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{USER.GAME}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "10",
+      "storage": "1",
+      "varName2": "USER_GAME",
+      "name": "Store Member Info"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{USER.GAME}",
+      "text3": "${tempVars(\"USER_GAME\")}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{USER.CUSTOMSTATUS}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "22",
+      "storage": "1",
+      "varName2": "USER_CUSTOMSTATUS",
+      "name": "Store Member Info"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{USER.CUSTOMSTATUS}",
+      "text3": "${tempVars(\"USER_CUSTOMSTATUS\")}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{@USER}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "0",
+      "storage": "1",
+      "varName2": "MEMBER_OBJECT",
+      "name": "Store Member Info"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{@USER}",
+      "text3": "${tempVars(\"MEMBER_OBJECT\")}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{SERVER}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{SERVER}",
+      "text3": "${msg.guild.name}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{SERVER.ID}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{SERVER.ID}",
+      "text3": "${msg.guild.id}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{SERVER.ICON}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{SERVER.ICON}",
+      "text3": "${msg.guild.iconURL}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{SERVER.AVATAR}",
+      "text3": "${msg.guild.iconURL}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{SERVER.OWNER}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{SERVER.OWNER}",
+      "text3": "${msg.guild.owner.displayName}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{SERVER.MEMBER.COUNT}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{SERVER.MEMBER.COUNT}",
+      "text3": "${msg.guild.memberCount}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{SERVER.ROLES.COUNT}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{SERVER.ROLES.COUNT}",
+      "text3": "${msg.guild.roles.size}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{SERVER.CHANNELS.COUNT}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{SERVER.CHANNELS.COUNT}",
+      "text3": "${msg.guild.channels.size}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{SERVER.BOTS.COUNT}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "30",
+      "storage": "1",
+      "varName2": "SERVER_BOTS_COUNT",
+      "name": "Store Server Info"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{SERVER.BOTS.COUNT}",
+      "text3": "${tempVars(\"SERVER_BOTS_COUNT\")}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{SERVER.CREATEDAT}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{SERVER.CREATEDAT}",
+      "text3": "${msg.guild.createdAt}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{SERVER.ROLE.LIST}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "14",
+      "storage": "1",
+      "varName2": "SERVER_ROLE_LIST",
+      "name": "Store Server Info"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{SERVER.ROLE.LIST}",
+      "text3": "${tempVars(\"SERVER_ROLE_LIST\")}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{SERVER.CHANNEL.LIST}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "13",
+      "storage": "1",
+      "varName2": "SERVER_CHANNEL_LIST",
+      "name": "Store Server Info"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{SERVER.CHANNEL.LIST}",
+      "text3": "${tempVars(\"SERVER_CHANNEL_LIST\")}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{CHANNEL}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "CHANNEL_NAME",
+      "name": "Store Channel Info"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{CHANNEL}",
+      "text3": "${tempVars(\"CHANNEL_NAME\")}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{#CHANNEL}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "0",
+      "storage": "1",
+      "varName2": "CHANNEL_OBJECT",
+      "name": "Store Channel Info"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{#CHANNEL}",
+      "text3": "${tempVars(\"CHANNEL_OBJECT\")}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{CHANNEL.ID}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "CHANNEL_ID",
+      "name": "Store Channel Info"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{CHANNEL.ID}",
+      "text3": "${tempVars(\"CHANNEL_ID\")}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{CHANNEL.TOPIC}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "3",
+      "storage": "1",
+      "varName2": "CHANNEL_TOPIC",
+      "name": "Store Channel Info"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{CHANNEL.TOPIC}",
+      "text3": "${tempVars(\"CHANNEL_TOPIC\")}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{EVERYONE}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{EVERYONE}",
+      "text3": "@everyone",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{HERE}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{EVERYONE}",
+      "text3": "@here",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{@}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{@}",
+      "text3": "@",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{CURRENT_TIME}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{CURRENT_TIME}",
+      "text3": "${Date.now()}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{CURRENT.TIME}",
+      "text3": "${Date.now()}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{RANDOM_PERCENTAGE}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "Math.floor(Math.random() * 100) + 1 + '%'",
+      "storage": "1",
+      "varName": "RANDOM_PERCENTAGE",
+      "name": "Run Script"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{RANDOM_PERCENTAGE}",
+      "text3": "${tempVars(\"RANDOM_PERCENTAGE\")}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{RANDOM_QUOTE}",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "var ran = Math.floor(Math.random() *  12) + 1;   \n\nvar line = new Array();\nline[1] = \"There's nothing self-serving about what motivated me to bring 'Schindler's List' to the screen\";\nline[2] = \"A person who never made a mistake never tried anything new\";\nline[3] = \"Our greatest fear should not be of failure but of succeeding at things in life that don't really matter.\";\nline[4] = \"There are three kinds of men. The one that learns by reading. The few who learn by observation. The rest of them have to pee on the electric fence for themselves.\";\nline[5] = \"Expect the best. Prepare for the worst. Capitalize on what comes\";\nline[6] = \"The difference between stupidity and genius is that genius has its limits\";\nline[7] = \"Life doesn't run away from nobody. Life runs at people\";\nline[8] = \"Too many of us are not living our dreams because we are living our fears.\";\nline[9] = \"Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time\";\nline[10] = \"Failure is not the opposite of success; it's part of success\";\nline[11] = \"Don’t let the noise of others’ opinions drown out your own inner voice\";\nline[12] = \"Change your thoughts and you change your world\";\n\nvar n = line[ran];\nn",
+      "storage": "1",
+      "varName": "RANDOM_QUOTE",
+      "name": "Run Script"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{RANDOM_QUOTE}",
+      "text3": "${tempVars(\"RANDOM_QUOTE\")}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{BS}/{DQ} Back slash and Double Quotes",
+      "color": "#ff00ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "\\\"",
+      "text3": "{DQ}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "\\",
+      "text3": "{BS}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{ALIASES}",
+      "color": "#8080c0",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "desc:\"",
+      "text3": "description:\"",
+      "info": "0",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{RANDOM_COLOR}",
+      "color": "#400080",
+      "name": "Comment"
+    },
+    {
+      "storage": "1",
+      "varName": "RANDOM_COLOR",
+      "name": "Generate Random Hex Color"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{RANDOM_COLOR}",
+      "text3": "${tempVars(\"RANDOM_COLOR\")}",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "[HEX_COLOR]",
+      "color": "#8000ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "color:#",
+      "text3": "color:0x",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "\"color\":#",
+      "text3": "\"color\":0x",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "[COLORS]",
+      "color": "#004080",
+      "name": "Comment"
+    },
+    {
+      "comment": "{RED}",
+      "color": "#ff0000",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{RED}",
+      "text3": "0xff0000",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{WHITE}",
+      "color": "#ffffff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{RED}",
+      "text3": "16777215",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{BLACK}",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{BLACK}",
+      "text3": "0x000000",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{GREEN}",
+      "color": "#008000",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{GREEN}",
+      "text3": "0x008000",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{LIME}",
+      "color": "#00ff00",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{LIME}",
+      "text3": "0x00FF00",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{BLUE}",
+      "color": "#0000ff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{BLUE}",
+      "text3": "0x0000ff",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{YELLOW}",
+      "color": "#ffff33",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{YELLOW}",
+      "text3": "0xffff33",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{AQUA}",
+      "color": "#00ffff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{AQUA}",
+      "text3": "0x00FFFF",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{PURPLE}",
+      "color": "#6a0dad",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{PURPLE}",
+      "text3": "0x6a0dad",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{PINK}",
+      "color": "#f8b8ba",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{PINK}",
+      "text3": "0xffc0cb",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{ORANGE}",
+      "color": "#ffa500",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{PINK}",
+      "text3": "0xFFA500",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{GRAY}",
+      "color": "#808080",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{GRAY}",
+      "text3": "0x808080",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "{DARK_GRAY}",
+      "color": "#36393e",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{DARK_GRAY}",
+      "text3": "0x36393e",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "[setting]",
+      "color": "#ffffff",
+      "name": "Comment"
+    },
+    {
+      "storage": "1",
+      "varName": "text",
+      "comparison": "10",
+      "value": "('{')",
+      "iftrue": "0",
+      "iftrueVal": "4",
+      "iffalse": "3",
+      "iffalseVal": "4",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "text",
+      "comparison": "11",
+      "value": "('}')",
+      "iftrue": "0",
+      "iftrueVal": "2",
+      "iffalse": "3",
+      "iffalseVal": "3",
+      "name": "Check Variable"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "var obj = ${tempVars(\"text\")};\nvar result = JSON.stringify(obj);\nresult.replace(/(\\s*?{\\s*?|\\s*?,\\s*?)(['\"])?([a-zA-Z0-9]+)(['\"])?:/g, '$1\"$3\":');\neval('var json = new Object(' + result + ')');\nresult",
+      "storage": "1",
+      "varName": "text",
+      "name": "Run Script"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "var myString = '${tempVars(\"text\")}';\nvar sillyString = myString.substr(1);\nsillyString\n",
+      "storage": "1",
+      "varName": "text",
+      "name": "Run Script"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "var myString = '${tempVars(\"text\")}';\nvar sillyString = myString.slice(0, -1);\nsillyString\n",
+      "storage": "1",
+      "varName": "text",
+      "name": "Run Script"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "var obj = {${tempVars(\"text\")}};\nvar result = JSON.stringify(obj);\nresult.replace(/(\\s*?{\\s*?|\\s*?,\\s*?)(['\"])?([a-zA-Z0-9]+)(['\"])?:/g, '$1\"$3\":');\neval('var json = new Object(' + result + ')');\nresult",
+      "storage": "1",
+      "varName": "text",
+      "name": "Run Script"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "'",
+      "text3": "’",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "[thumbnail]",
+      "color": "#ffffff",
+      "name": "Comment"
+    },
+    {
+      "storage": "1",
+      "varName": "text",
+      "comparison": "5",
+      "value": "('\"thumbnail\"')",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "4",
+      "name": "Check Variable"
+    },
+    {
+      "behavior": "0",
+      "jsonObjectVarName": "text",
+      "path": "$.thumbnail",
+      "storage": "1",
+      "varName": "THUMBNAIL",
+      "name": "Parse From Stored Json"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "\"thumbnail\":\"${tempVars(\"THUMBNAIL\")}\"",
+      "text3": "\"thumbnail\":{\"url\":\"${tempVars(\"THUMBNAIL\")}\"}",
+      "info": "0",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "behavior": "0",
+      "jsonObjectVarName": "text",
+      "path": "$.thumbnail.url",
+      "storage": "1",
+      "varName": "THUMBNAIL_URL",
+      "name": "Parse From Stored Json"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "\"thumbnail\":\"${tempVars(\"THUMBNAIL_URL\")}\"",
+      "text3": "\"thumbnail\":{\"url\":\"${tempVars(\"THUMBNAIL_URL\")}\"}",
+      "info": "0",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "[image]",
+      "color": "#ffffff",
+      "name": "Comment"
+    },
+    {
+      "storage": "1",
+      "varName": "text",
+      "comparison": "5",
+      "value": "('\"image\"')",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "4",
+      "name": "Check Variable"
+    },
+    {
+      "behavior": "0",
+      "jsonObjectVarName": "text",
+      "path": "$.image",
+      "storage": "1",
+      "varName": "IMAGE",
+      "name": "Parse From Stored Json"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "\"image\":\"${tempVars(\"IMAGE\")}\"",
+      "text3": "\"image\":{\"url\":\"${tempVars(\"IMAGE\")}\"}",
+      "info": "0",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "behavior": "0",
+      "jsonObjectVarName": "text",
+      "path": "$.image.url",
+      "storage": "1",
+      "varName": "IMAGE_URL",
+      "name": "Parse From Stored Json"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "\"image\":\"${tempVars(\"IMAGE_URL\")}\"",
+      "text3": "\"image\":{\"url\":\"${tempVars(\"IMAGE_URL\")}\"}",
+      "info": "0",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "[plainText]",
+      "color": "#ffffff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "\"plaintext\":",
+      "text3": "\"plainText\":",
+      "info": "0",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "storage": "1",
+      "varName": "text",
+      "comparison": "5",
+      "value": "('\"plainText\"')",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "6",
+      "name": "Check Variable"
+    },
+    {
+      "behavior": "0",
+      "jsonObjectVarName": "text",
+      "path": "$.plainText",
+      "storage": "1",
+      "varName": "MESSAGE_CONTENT",
+      "name": "Parse From Stored Json"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "\"plainText\":\"${tempVars(\"MESSAGE_CONTENT\")}\",",
+      "text3": "\"plainText\":\"${tempVars(\"MESSAGE_CONTENT\")}\"",
+      "info": "0",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "\"plainText\": \"${tempVars(\"MESSAGE_CONTENT\")}\",",
+      "text3": "\"plainText\": \"${tempVars(\"MESSAGE_CONTENT\")}\"",
+      "info": "0",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "\"plainText\":\"${tempVars(\"MESSAGE_CONTENT\")}\"",
+      "text3": "",
+      "info": "0",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "\"plainText\": \"${tempVars(\"MESSAGE_CONTENT\")}\"",
+      "text3": "",
+      "info": "0",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "'",
+      "text3": "’",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "comment": "[setting2]",
+      "color": "#ffffff",
+      "name": "Comment"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "'",
+      "text3": "’",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "storage": "1",
+      "varName": "text",
+      "comparison": "10",
+      "value": "('{')",
+      "iftrue": "0",
+      "iftrueVal": "5",
+      "iffalse": "3",
+      "iffalseVal": "4",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "text",
+      "comparison": "11",
+      "value": "('}')",
+      "iftrue": "0",
+      "iftrueVal": "4",
+      "iffalse": "3",
+      "iffalseVal": "3",
+      "name": "Check Variable"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "var obj = ${tempVars(\"text\")};\nvar result = JSON.stringify(obj);\nresult.replace(/(\\s*?{\\s*?|\\s*?,\\s*?)(['\"])?([a-zA-Z0-9]+)(['\"])?:/g, '$1\"$3\":');\neval('var json = new Object(' + result + ')');\nresult",
+      "storage": "1",
+      "varName": "text",
+      "name": "Run Script"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "var myString = '${tempVars(\"text\")}';\nvar sillyString = myString.substr(1);\nsillyString\n",
+      "storage": "1",
+      "varName": "text",
+      "name": "Run Script"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "var myString = '${tempVars(\"text\")}';\nvar sillyString = myString.slice(0, -1);\nsillyString\n",
+      "storage": "1",
+      "varName": "text",
+      "name": "Run Script"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "var obj = {${tempVars(\"text\")}};\nvar result = JSON.stringify(obj);\nresult.replace(/(\\s*?{\\s*?|\\s*?,\\s*?)(['\"])?([a-zA-Z0-9]+)(['\"])?:/g, '$1\"$3\":');\neval('var json = new Object(' + result + ')');\nresult",
+      "storage": "1",
+      "varName": "text",
+      "name": "Run Script"
+    },
+    {
+      "comment": "EMBED ON ACTION",
+      "color": "#ffffff",
+      "name": "Comment"
+    },
+    {
+      "storage": "1",
+      "varName": "text",
+      "comparison": "10",
+      "value": "('{')",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "3",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "text",
+      "comparison": "11",
+      "value": "('}')",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Variable"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "var myString = '${tempVars(\"text\")}';\nvar sillyString = myString.substr(1);\nsillyString\n",
+      "storage": "1",
+      "varName": "text",
+      "name": "Run Script"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "var myString = '${tempVars(\"text\")}';\nvar sillyString = myString.slice(0, -1);\nsillyString\n",
+      "storage": "1",
+      "varName": "text",
+      "name": "Run Script"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{DQ}",
+      "text3": "\\\"",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"text\")}",
+      "text2": "{BS}",
+      "text3": "\\",
+      "info": "1",
+      "storage": "1",
+      "varName": "text",
+      "name": "Replace Text"
+    },
+    {
+      "storage": "1",
+      "varName": "MESSAGE_CONTENT",
+      "comparison": "0",
+      "value": "",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "4",
+      "name": "Check Variable"
+    },
+    {
+      "text": "${tempVars(\"MESSAGE_CONTENT\")}",
+      "text2": "{DQ}",
+      "text3": "\\\"",
+      "info": "1",
+      "storage": "1",
+      "varName": "MESSAGE_CONTENT",
+      "name": "Replace Text"
+    },
+    {
+      "text": "${tempVars(\"MESSAGE_CONTENT\")}",
+      "text2": "{BS}",
+      "text3": "\\",
+      "info": "1",
+      "storage": "1",
+      "varName": "MESSAGE_CONTENT",
+      "name": "Replace Text"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "msg.channel.send(\"${tempVars(\"MESSAGE_CONTENT\")}\",{embed:{${tempVars(\"text\")}}});\n",
+      "storage": "1",
+      "varName": "embed-end-log",
+      "name": "Run Script"
+    },
+    {
+      "count": "1",
+      "name": "Skip Actions"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "msg.channel.send({embed:{${tempVars(\"text\")}}});\n",
+      "storage": "1",
+      "varName": "embed-end-log",
+      "name": "Run Script"
+    },
+    {
+      "time": "1",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed-end-log",
+      "comparison": "1",
+      "value": "'[object Promise]'",
+      "iftrue": "1",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "title": "",
+      "author": "",
+      "color": "#E74C3C",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "invalid-embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "invalid-embed",
+      "message": "${member} Invalid Embed JSON ",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "invalid-embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "1",
+      "varName3": "invalid-embed",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "time": "5",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "invalid-embed",
+      "name": "Delete Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "anchor_id": "2",
+      "color": "#ff0000",
+      "description": "HELP",
+      "name": "Create Anchor"
+    },
+    {
+      "info": "0",
+      "infoIndex": "2",
+      "storage": "1",
+      "varName": "page",
+      "name": "Store Command Params"
+    },
+    {
+      "storage": "1",
+      "varName": "page",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "1",
+      "iffalse": "3",
+      "iffalseVal": "1",
+      "name": "Check Variable"
+    },
+    {
+      "description": "Jump To HELP 1",
+      "jump_to_anchor": "3",
+      "color": "#ffff00",
+      "name": "Jump to Anchor"
+    },
+    {
+      "storage": "1",
+      "varName": "page",
+      "comparison": "1",
+      "value": "2",
+      "iftrue": "0",
+      "iftrueVal": "111",
+      "iffalse": "3",
+      "iffalseVal": "1",
+      "name": "Check Variable"
+    },
+    {
+      "description": "Jump To HELP 2",
+      "jump_to_anchor": "4",
+      "color": "#ffff00",
+      "name": "Jump to Anchor"
+    },
+    {
+      "storage": "1",
+      "varName": "page",
+      "comparison": "1",
+      "value": "3",
+      "iftrue": "0",
+      "iftrueVal": "111",
+      "iffalse": "3",
+      "iffalseVal": "1",
+      "name": "Check Variable"
+    },
+    {
+      "description": "Jump To HELP 3",
+      "jump_to_anchor": "5",
+      "color": "#ffff00",
+      "name": "Jump to Anchor"
+    },
+    {
+      "storage": "1",
+      "varName": "page",
+      "comparison": "1",
+      "value": "4",
+      "iftrue": "0",
+      "iftrueVal": "111",
+      "iffalse": "3",
+      "iffalseVal": "1",
+      "name": "Check Variable"
+    },
+    {
+      "description": "Jump To HELP 4",
+      "jump_to_anchor": "6",
+      "color": "#ffff00",
+      "name": "Jump to Anchor"
+    },
+    {
+      "storage": "1",
+      "varName": "page",
+      "comparison": "1",
+      "value": "5",
+      "iftrue": "0",
+      "iftrueVal": "111",
+      "iffalse": "3",
+      "iffalseVal": "1",
+      "name": "Check Variable"
+    },
+    {
+      "description": "Jump To HELP 5",
+      "jump_to_anchor": "7",
+      "color": "#ffff00",
+      "name": "Jump to Anchor"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "msg.channel.send({embed:{color:15158332,description:\"Invalid Page `embed help <1/2/3/4/5>`\"}});\n",
+      "storage": "0",
+      "varName": "",
+      "name": "Run Script"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "anchor_id": "3",
+      "color": "#ffff00",
+      "description": "HELP 1",
+      "name": "Create Anchor"
+    },
+    {
+      "title": "Embed Builder",
+      "author": "",
+      "color": "36393E",
+      "url": "https://github.com/Gr3nDy/DBM-Embed-Builder",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/Screenshot/EB.png",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "help_1",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "help_1",
+      "message": "Create **Custom Embed** in **Discord**\n\nThis command allows you to create custom embed from json format \nhere's a few step to do it if you're new to discord embed\n\nAlways use `\" \"` between the text if it's string/text\nfor an example you don't have to use it with color,timestamp,etc.\n\n**Command**: `embed <embed>`\n\n**Plaintext**\n`plaintext:\"TEXT\"`\n\n**Title**\n`title:\"THE TITLE\"`\n\n**Description**\n`description:\"THE DESCRIPTION\"`\n\n**Title + Description**\n`title:\"THE TITLE\",description:\"THE DESCRIPTION\"`\n\n**Title + URL**\n`title:\"THE TITLE\",url:\"\"https://example.com/\"`",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "help_1",
+      "message": "Page 1/5",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "help_1",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "anchor_id": "4",
+      "color": "#ffff00",
+      "description": "HELP 2",
+      "name": "Create Anchor"
+    },
+    {
+      "title": "Embed Builder",
+      "author": "",
+      "color": "36393E",
+      "url": "https://github.com/Gr3nDy/DBM-Embed-Builder",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/Screenshot/EB.png",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "help_2",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "help_2",
+      "message": "**Author (Name)**\n`author:{name:\"USERNAME\"}`\n\n**Author (Name + Icon + Url)** \n`author:{name:\"USERNAME\",icon_url:\"https://image.com/image.png\",url:\"https://example.net/\"}`\n\nIf you wish to automatically use your name and your avatar you could\nuse built in **Variables** in **Embed Builder**, this is how it's done;\n`author:{name:\"{USER}\",icon_url:\"{USER.AVATAR}\"}`\n\n\n**SEE LIST OF AVAILABLE VARIABLES**\n**Command:** `embed variable`\n\nyou can also use the built in **Embed Builder** variables title, description, thumbnail, etc.",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "help_2",
+      "message": "Page 2/5",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "help_2",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "anchor_id": "5",
+      "color": "#ffff00",
+      "description": "HELP 3",
+      "name": "Create Anchor"
+    },
+    {
+      "title": "Embed Builder",
+      "author": "",
+      "color": "36393E",
+      "url": "https://github.com/Gr3nDy/DBM-Embed-Builder",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/Screenshot/EB.png",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "help_3",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "help_3",
+      "message": "**Color**\n`color:#000000`\n\n**Description + Color**\n`description:\"THE DESCRIPTION\",color:#000000`\n\nfor **Color** you don't have to put `\" \"` between the input\n\n**Color** is using **decimal** however if you wish to use **hexadecimal**\nplease put `#` before the hexadecimal for an example; `#fffb00`\n\nIf you think it's too much work **Embed Builder** is also has built in **Color Variables**\nthis is how it's done (the color variables are limited);\n`description:\"THE DESCRIPTION\",color:{RED}`\n\n\n**SEE LIST OF AVAILABLE VARIABLES**\n**Command:** `embed color`\n\n\n",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "help_3",
+      "message": "Page 3/5",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "help_3",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "anchor_id": "6",
+      "color": "#ffff00",
+      "description": "HELP 4",
+      "name": "Create Anchor"
+    },
+    {
+      "title": "Embed Builder",
+      "author": "",
+      "color": "36393E",
+      "url": "https://github.com/Gr3nDy/DBM-Embed-Builder",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/Screenshot/EB.png",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "help_4",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "help_4",
+      "message": "**Timestamp**\n`timestamp:{CURRENT_TIME}`\n\n**Title + Description + Timestamp**\n`title:\"THE TITLE\",description:\"THE DESCRIPTION\",timestamp:{CURRENT_TIME}`\n\nfor timestamp you could just use `{CURRENT_TIME}` variable to make things easier\n\n\n\n**Add Field**\n`fields:[{name:\"THE TITLE\",value:\"THE DESCRIPTION\"}]`\n\n**Add Field 2**\n`fields:[{name:\"THE TITLE\",value:\"THE DESCRIPTION\"},{name:\"THE TITLE 2\",value:\"THE DESCRIPTION 2\"}]`\n\n**Add Field (InLine)**\n`fields:[{name:\"THE TITLE\",value:\"THE DESCRIPTION\",inline:true},{name:\"THE TITLE 2\",value:\"THE DESCRIPTION 2\",inline: true}]`\n\nyou can add embed fields up to **25** fields\nuse `inline:true` to show them inline\n\n\n",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "help_4",
+      "message": "Page 4/5",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "help_4",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "anchor_id": "7",
+      "color": "#ffff00",
+      "description": "HELP 5",
+      "name": "Create Anchor"
+    },
+    {
+      "title": "Embed Builder",
+      "author": "",
+      "color": "36393E",
+      "url": "https://github.com/Gr3nDy/DBM-Embed-Builder",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/Screenshot/EB.png",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "help_5",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "help_5",
+      "message": "**Image**\n`image:{url:\"https://image.com/IMAGE.png\"}`\n_or_\n`image:\"https://image.com/IMAGE.png\"`\n\n**Thumbnail**\n`thumbnail:{url:\"https://image.com/IMAGE.png\"}`\n_or_\n`thumbnail:\"https://image.com/IMAGE.png\"`\n\n**Footer**\n`footer:{text:\"THE TEXT\",icon_url:\"https://image.com/IMAGE.png\"}`\n\nYou can use `\\n` to create new line;\n`description:\"Line 1\\nLine 2\"`\n\nYou can use `\\\"` to insert double quote;\n`description:\"text \\\"TEXT\\\" text\"`\n\n\n**if you wish to see a few example of how to do multiple format;**\n**Command:** `embed example`\n\n\nI'm sorry i couldn't include all the documentary into **Embed Builder**\nHelp section, i'm trying my best to make a simple guide for beginner.\nHowever if you wish to learn more about **Discord.js Embeds** You could go to this site;\n[Docs](https://discordjs.guide/popular-topics/embeds.html)\n\n-_GrenDy#2045_",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "help_5",
+      "message": "Page 5/5",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "help_5",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "anchor_id": "8",
+      "color": "#804040",
+      "description": "HELP VARIABLES",
+      "name": "Create Anchor"
+    },
+    {
+      "title": "Embed Builder",
+      "author": "",
+      "color": "36393E",
+      "url": "https://github.com/Gr3nDy/DBM-Embed-Builder",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/Screenshot/EB.png",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "help_VARIABLES",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "help_VARIABLES",
+      "message": "**List Of Variables**\n\nYou could use these **Variables** inside the json _title, description, footer, etc._\n(**CASE SENSITIVE** upperCase Characters, Please write all variables in upperCase)\n\n**USER**\n`{USER}` - User Name\n`{@USER}` - Mention User\n`{USER.ID}` - User ID\n`{USER.NICK}` - User Nickname\n`{USER.TAG}` - User Tag (user#0000)\n`{USER.AVATAR}` - User Avatar URL\n`{USER.GAME}` - User Game\n`{USER.CUSTOMSTATUS}` - User Custom Status\n\n**SERVER**\n`{SERVER}` - Server Name\n`{SERVER.ID}` - Server ID\n`{SERVER.ICON}` - Server Icon\n`{SERVER.OWNER}` - Server Owner Name\n`{SERVER.MEMBER.COUNT}` - Server Member Size\n`{SERVER.ROLES.COUNT}` - Server Roles Size\n`{SERVER.CHANNELS.COUNT}` - Server Channels Size\n`{SERVER.BOTS.COUNT}` - Server Bots Size\n`{SERVER.CREATEDAT}` - Server Created Date\n`{SERVER.ROLE.LIST}` - Server Role List\n`{SERVER.CHANNEL.LIST}` - Server Channel List\n\n\n**CHANNEL**\n`{CHANNEL}` - Channel Name\n`{#CHANNEL}` - Mention Channel\n`{CHANNEL.ID}` - Channel ID\n`{CHANNEL.TOPIC}` - Channel Topic\n\n**TIMESTAMP**\n`{CURRENT_TIME}` - Current Time in Timestamp \n\n\n`{EVERYONE}` - Mention ``@everyone``\n`{HERE}` - Mention ``@here``\n`<{@}userid>` Tag Specific User (Change userid with id of the member)\n\n``@everyone`` and ``@here`` is not going to work in **Embed**\n\n\n`{RANDOM_PERCENTAGE}` - Random Percentage 0 - 100%\n`{RANDOM_QUOTE}` - Random Quotes",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "help_VARIABLES",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "anchor_id": "9",
+      "color": "#800000",
+      "description": "HELP COLORS",
+      "name": "Create Anchor"
+    },
+    {
+      "title": "Embed Builder",
+      "author": "",
+      "color": "36393E",
+      "url": "https://github.com/Gr3nDy/DBM-Embed-Builder",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/Screenshot/EB.png",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "help_COLORS",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "help_COLORS",
+      "message": "**List Of Colors**\n\nThese are list of available **Color Variable**\n\n`{RED}`\n`{WHITE}`\n`{BLACK}`\n`{GREEN}`\n`{LIME}`\n`{BLUE}`\n`{AQUA}`\n`{YELLOW}`\n`{PURPLE}`\n`{PINK}`\n`{ORANGE}`\n`{GRAY}`\n`{DARK_GRAY}`\n`{RANDOM_COLOR}`\n\nExample Usage;\n`color:{YELLOW}`\n\n`embed help 3` for more information\n",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "help_COLORS",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "anchor_id": "10",
+      "color": "#804000",
+      "description": "HELP EXAMPLE",
+      "name": "Create Anchor"
+    },
+    {
+      "title": "Embed Builder",
+      "author": "",
+      "color": "36393E",
+      "url": "https://github.com/Gr3nDy/DBM-Embed-Builder",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/Screenshot/EB.png",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "help_EXAMPLE",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "help_EXAMPLE",
+      "message": "**JSON Example**\n\n```title:\"Welcome To The Server\",description:\"Hi @john welcome to {SERVER}\",author:{name:\"{USER}\",icon_url:\"{USER.AVATAR}\"},color:#7c6e9c,timestamp:{CURRENT_TIME}```\n\n```title:\"Announcement\",description:\"Tomorrow were going to roll the giveaway winner\",thumbnail:{url:\"{SERVER.ICON}\"},color:{RED},footer:{text:\"{USER.TAG}\",icon_url:\"{USER.AVATAR}\"}```\n\n```description:\"Shout out to my friend @xxgamerslayer3000xx for giving me food n stuff\",fields:[{name:\"Note\",value:\"i don't actually like john\"}]```\n\n\n",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "help_EXAMPLE",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "comment": "JSON Embed Builder | release 1.0.6 | GrenDy",
+      "color": "#ff0000",
+      "name": "Comment"
+    }
+  ],
+  "comType": "0",
+  "_aliases": [
+    "embedbuilder",
+    "eb"
+  ]
+}
