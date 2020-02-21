@@ -63,7 +63,7 @@ DBM.
 * Fixed Invalid `\` When creating new line
 * Fixed Invalid `\` When inserting double quotes
 <br>
-[DOWNLOAD 1.0.6 (OLDER VERSION)](https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/RawData/embed-1-0-6(old%20version).json)
+* [DOWNLOAD 1.0.6 (OLDER VERSION)](https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/RawData/embed-1-0-6(old%20version).json)
 </details>
 
 <details><summary>1.0.8</summary>
@@ -72,7 +72,7 @@ DBM.
 * Ability to change `ALIASES` Prefix
 * Bugs fixed
 <br>
-[DOWNLOAD 1.0.8 (LATEST VERSION)](https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/RawData/embed.json)
+* [DOWNLOAD 1.0.8 (LATEST VERSION)](https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/RawData/embed.json)
 </details>
 
 # Note
