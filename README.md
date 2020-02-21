@@ -1,5 +1,5 @@
 # ![app icon](./Screenshot/EB.png) [DBM] JSON Embed Builder
-[![release](https://img.shields.io/static/v1?label=release&message=1.0.7&color=red)](https://github.com/Gr3nDy/DBM-Embed-Builder/)
+[![release](https://img.shields.io/static/v1?label=release&message=1.0.8&color=red)](https://github.com/Gr3nDy/DBM-Embed-Builder/)
 
 Create **Embed** inside **Discord**
 ![gif](./Screenshot/GIF.gif)
@@ -59,9 +59,18 @@ DBM.
 
 <details><summary>1.0.6</summary>
 
++ [1.0.6 (OLDER VERSION)](https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/RawData/embed-1-0-6(old%20version).json)
 * Added Random Color `{RANDOM_COLOR}`
 * Fixed Invalid `\` When creating new line
 * Fixed Invalid `\` When inserting double quotes
+</details>
+
+<details><summary>1.0.8</summary>
+
++ [1.0.8 (LATEST VERSION)](https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/RawData/embed.json)
+* Added `ALIASES` (Now it's easier to post an embed)
+* Ability to change `ALIASES` Prefix
+* Bugs fixed
 </details>
 
 # Note
