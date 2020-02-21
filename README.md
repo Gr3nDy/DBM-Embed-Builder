@@ -62,6 +62,15 @@ DBM.
 * Added Random Color `{RANDOM_COLOR}`
 * Fixed Invalid `\` When creating new line
 * Fixed Invalid `\` When inserting double quotes
+[DOWNLOAD 1.0.6 (OLDER VERSION)](https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/RawData/embed-1-0-6(old%20version).json)
+</details>
+
+<details><summary>1.0.8</summary>
+
+* Added `ALIASES` (Now it's easier to post an embed)
+* Ability to change `ALIASES` Prefix
+* Bugs fixed
+[DOWNLOAD 1.0.9 (LATEST VERSION)](https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/RawData/embed.json)
 </details>
 
 # Note
