@@ -231,6 +231,38 @@
       "name": "Create Anchor"
     },
     {
+      "comment": "{ALIASES}",
+      "color": "#8080c0",
+      "name": "Comment"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "\"/${tempVars(\"ap\")}P|${tempVars(\"ap\")}PT:|${tempVars(\"ap\")}T:|${tempVars(\"ap\")}D:|${tempVars(\"ap\")}desc:|${tempVars(\"ap\")}U:|${tempVars(\"ap\")}A:|${tempVars(\"ap\")}N:|${tempVars(\"ap\")}IU:|${tempVars(\"ap\")}I_U:|${tempVars(\"ap\")}C:|${tempVars(\"ap\")}TS:|${tempVars(\"ap\")}F:|${tempVars(\"ap\")}V:|${tempVars(\"ap\")}IL:|${tempVars(\"ap\")}I:|${tempVars(\"ap\")}TH:|${tempVars(\"ap\")}TN:|${tempVars(\"ap\")}FT:|${tempVars(\"ap\")}TXT:/i\"\n\n// DO NOT CHANGE",
+      "storage": "1",
+      "varName": "apcheck",
+      "name": "Run Script"
+    },
+    {
+      "storage": "1",
+      "varName": "text",
+      "comparison": "12",
+      "value": "${tempVars(\"apcheck\")}",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "1",
+      "name": "Check Variable"
+    },
+    {
+      "behavior": "0",
+      "interpretation": "0",
+      "code": "const v = '${tempVars(\"text\")}';\nconst v1 = v.replace(/${tempVars(\"ap\")}P:|${tempVars(\"ap\")}PT:/i, \"plaintext:\");\nconst v2 = v1.replace(/${tempVars(\"ap\")}T:/i, \"title:\");\nconst v3 = v2.replace(/${tempVars(\"ap\")}D:|${tempVars(\"ap\")}desc:/i, \"description:\");\nconst v4 = v3.replace(/${tempVars(\"ap\")}U:/i, \"url:\");\nconst v5 = v4.replace(/${tempVars(\"ap\")}A:/i, \"author:\");\nconst v6 = v5.replace(/${tempVars(\"ap\")}N:/gi, \"name:\");\nconst v7 = v6.replace(/${tempVars(\"ap\")}IU:|${tempVars(\"ap\")}I_U:/gi, \"icon_url:\");\nconst v8 = v7.replace(/${tempVars(\"ap\")}C:/i, \"color:\");\nconst v9 = v8.replace(/${tempVars(\"ap\")}TS:/i, \"timestamp:\");\nconst v10 = v9.replace(/${tempVars(\"ap\")}F:/gi, \"fields:\");\nconst v11 = v10.replace(/${tempVars(\"ap\")}V:/gi, \"value:\");\nconst v12 = v11.replace(/${tempVars(\"ap\")}IL:/gi, \"inline:\");\nconst v13 = v12.replace(/${tempVars(\"ap\")}I:/i, \"image:\");\nconst v14 = v13.replace(/${tempVars(\"ap\")}TH:|${tempVars(\"ap\")}TN:/i, \"thumbnail:\");\nconst v15 = v14.replace(/${tempVars(\"ap\")}FT:/i, \"footer:\");\nconst v16 = v15.replace(/${tempVars(\"ap\")}TXT:/gi, \"text:\");\nconst result = v16\nresult ",
+      "storage": "1",
+      "varName": "text",
+      "name": "Run Script"
+    },
+    {
       "comment": "[VARIABLE]",
       "color": "#004080",
       "name": "Comment"
@@ -741,7 +773,7 @@
     {
       "behavior": "0",
       "interpretation": "0",
-      "code": "var ran = Math.floor(Math.random() *  12) + 1;   \n\nvar line = new Array();\nline[1] = \"There's nothing self-serving about what motivated me to bring 'Schindler's List' to the screen\";\nline[2] = \"A person who never made a mistake never tried anything new\";\nline[3] = \"Our greatest fear should not be of failure but of succeeding at things in life that don't really matter.\";\nline[4] = \"There are three kinds of men. The one that learns by reading. The few who learn by observation. The rest of them have to pee on the electric fence for themselves.\";\nline[5] = \"Expect the best. Prepare for the worst. Capitalize on what comes\";\nline[6] = \"The difference between stupidity and genius is that genius has its limits\";\nline[7] = \"Life doesn't run away from nobody. Life runs at people\";\nline[8] = \"Too many of us are not living our dreams because we are living our fears.\";\nline[9] = \"Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time\";\nline[10] = \"Failure is not the opposite of success; it's part of success\";\nline[11] = \"Don’t let the noise of others’ opinions drown out your own inner voice\";\nline[12] = \"Change your thoughts and you change your world\";\n\nvar n = line[ran];\nn",
+      "code": "var ran = Math.floor(Math.random() *  20) + 1;   \n\nvar line = new Array();\nline[1] = \"There's nothing self-serving about what motivated me to bring 'Schindler's List' to the screen\";\nline[2] = \"A person who never made a mistake never tried anything new\";\nline[3] = \"Our greatest fear should not be of failure but of succeeding at things in life that don't really matter.\";\nline[4] = \"There are three kinds of men. The one that learns by reading. The few who learn by observation. The rest of them have to pee on the electric fence for themselves.\";\nline[5] = \"Expect the best. Prepare for the worst. Capitalize on what comes\";\nline[6] = \"The difference between stupidity and genius is that genius has its limits\";\nline[7] = \"Life doesn't run away from nobody. Life runs at people\";\nline[8] = \"Too many of us are not living our dreams because we are living our fears.\";\nline[9] = \"Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time\";\nline[10] = \"Failure is not the opposite of success; it's part of success\";\nline[11] = \"Don’t let the noise of others’ opinions drown out your own inner voice\";\nline[12] = \"Change your thoughts and you change your world\";\nline[13] = \"Be sure of the foundation of your life. Know why you live as you do. Be ready to give a reason for it. Do not, in such a matter as life, build an opinion or custom on what you guess is true. Make it a matter of certainty and science.\";\nline[14] = \"The practical effect of a belief is the real test of its soundness.\";\nline[15] = \"Life is about not knowing, having to change, taking a moment and making the best of it.\";\nline[16] = \"Life is about feeling someone pushing you from behind and realizing it’s you.\";\nline[17] = \"You have to speak to be heard, but sometimes you have to be silent to be appreciated.\";\nline[18] = \"Embrace your challenges with an open heart, because through every challenge strength forms.\";\nline[19] = \"Anger won’t make your problems easier. Tears won’t bring back what is gone. But smile, and gratitude will make you stronger.\";\nline[20] = \"Look forward with hope, not backwards with regret.\"\n\nvar n = line[ran];\nn",
       "storage": "1",
       "varName": "RANDOM_QUOTE",
       "name": "Run Script"
@@ -777,38 +809,6 @@
       "storage": "1",
       "varName": "text",
       "name": "Replace Text"
-    },
-    {
-      "comment": "{ALIASES}",
-      "color": "#8080c0",
-      "name": "Comment"
-    },
-    {
-      "behavior": "0",
-      "interpretation": "0",
-      "code": "\"/${tempVars(\"ap\")}P|${tempVars(\"ap\")}PT:|${tempVars(\"ap\")}T:|${tempVars(\"ap\")}D:|${tempVars(\"ap\")}desc:|${tempVars(\"ap\")}U:|${tempVars(\"ap\")}A:|${tempVars(\"ap\")}N:|${tempVars(\"ap\")}IU:|${tempVars(\"ap\")}I_U:|${tempVars(\"ap\")}C:|${tempVars(\"ap\")}TS:|${tempVars(\"ap\")}F:|${tempVars(\"ap\")}V:|${tempVars(\"ap\")}IL:|${tempVars(\"ap\")}I:|${tempVars(\"ap\")}TH:|${tempVars(\"ap\")}TN:|${tempVars(\"ap\")}FT:|${tempVars(\"ap\")}TXT:/i\"\n\n// DO NOT CHANGE",
-      "storage": "1",
-      "varName": "apcheck",
-      "name": "Run Script"
-    },
-    {
-      "storage": "1",
-      "varName": "text",
-      "comparison": "12",
-      "value": "${tempVars(\"apcheck\")}",
-      "iftrue": "0",
-      "iftrueVal": "",
-      "iffalse": "3",
-      "iffalseVal": "1",
-      "name": "Check Variable"
-    },
-    {
-      "behavior": "0",
-      "interpretation": "0",
-      "code": "const v = '${tempVars(\"text\")}';\nconst v1 = v.replace(/${tempVars(\"ap\")}P:|${tempVars(\"ap\")}PT:/i, \"plaintext:\");\nconst v2 = v1.replace(/${tempVars(\"ap\")}T:/i, \"title:\");\nconst v3 = v2.replace(/${tempVars(\"ap\")}D:|${tempVars(\"ap\")}desc:/i, \"description:\");\nconst v4 = v3.replace(/${tempVars(\"ap\")}U:/i, \"url:\");\nconst v5 = v4.replace(/${tempVars(\"ap\")}A:/i, \"author:\");\nconst v6 = v5.replace(/${tempVars(\"ap\")}N:/gi, \"name:\");\nconst v7 = v6.replace(/${tempVars(\"ap\")}IU:|${tempVars(\"ap\")}I_U:/gi, \"icon_url:\");\nconst v8 = v7.replace(/${tempVars(\"ap\")}C:/i, \"color:\");\nconst v9 = v8.replace(/${tempVars(\"ap\")}TS:/i, \"timestamp:\");\nconst v10 = v9.replace(/${tempVars(\"ap\")}F:/gi, \"fields:\");\nconst v11 = v10.replace(/${tempVars(\"ap\")}V:/gi, \"value:\");\nconst v12 = v11.replace(/${tempVars(\"ap\")}IL:/gi, \"inline:\");\nconst v13 = v12.replace(/${tempVars(\"ap\")}I:/i, \"image:\");\nconst v14 = v13.replace(/${tempVars(\"ap\")}TH:|${tempVars(\"ap\")}TN:/i, \"thumbnail:\");\nconst v15 = v14.replace(/${tempVars(\"ap\")}FT:/i, \"footer:\");\nconst v16 = v15.replace(/${tempVars(\"ap\")}TXT:/gi, \"text:\");\nconst result = v16\nresult ",
-      "storage": "1",
-      "varName": "text",
-      "name": "Run Script"
     },
     {
       "comment": "{RANDOM_COLOR}",
