@@ -74,7 +74,7 @@ DBM.
 </details>
 
 # Note
-⚠️Make sure you've installed <em>betamods</em> on your DBM⚠️ 
+⚠️<b>Make sure you've installed <em>betamods</em> on your DBM</b>⚠️ 
 <br>
 <br>
 If you like to use an online generator for json embed builder you can use; [Nadeko Embed Builder](https://eb.nadeko.bot)
