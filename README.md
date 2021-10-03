@@ -78,7 +78,7 @@ DBM.
 ⚠️<b>Make sure you've installed <em>DBM Mods</em> on your DBM</b>⚠️ 
 <br>
 <br>
-If you like to use an online generator for json embed builder you can use; [Nadeko Embed Builder](https://eb.nadeko.bot)
+If you like to use an online generator for json embed builder you can use; [Nadeko Embed Builder](https://eb.nadeko.bot) (Plaintext isn't working anymore on experimental version)
 <br>
 Heres a few guides that might come in handy; [Embeds|Discord.js](http://discordjs.guide/popular-topics/embeds.html)
 <br>
