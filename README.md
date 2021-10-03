@@ -27,7 +27,7 @@ DBM Embed Builder.
 - [ ] Content Message/Plain Text
 - [ ] Simplified Thumbnail & Image
 - [ ] Docs/Wiki
-- [ ] JSON Builder (This will allows you to create Embed JSON in discord)
+- [ ] JSON Builder (This allow you to create Raw Embed JSON with visualizer in discord)
 
  
 # Installation
