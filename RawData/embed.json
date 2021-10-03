@@ -159,12 +159,6 @@
       "name": "Run Script"
     },
     {
-      "anchor_id": "[Thumbnail & Image]",
-      "color": "#8080c0",
-      "description": "[Thumbnail & Image]",
-      "name": "Create Anchor"
-    },
-    {
       "anchor_id": "[Send]",
       "color": "#8080c0",
       "description": "[Send]",
