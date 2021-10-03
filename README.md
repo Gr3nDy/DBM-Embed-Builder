@@ -15,7 +15,7 @@ DBM Embed Builder.
 
 <details><summary>V2.0 Sneakpeek</summary>
 
-![curly](./Screenshot/curlybrackets.gif)
+![curly](./Screenshot/V2-Sneakpeek.gif)
 </details>
 
 # Upcoming Features For **DBM Embed Builder** 2.0
