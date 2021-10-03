@@ -13,6 +13,11 @@ DBM Version you're using.
 Once DBM Updated DiscordJS V13 (Discord Bot Maker V1.7 Update), i'll add more features into
 DBM Embed Builder.
 
+<details><summary>V2.0 Sneakpeek</summary>
+
+![curly](./Screenshot/curlybrackets.gif)
+</details>
+
 # Upcoming Features For **DBM Embed Builder** 2.0
 - [x] Lightweight
 - [x] Relaxed JSON
