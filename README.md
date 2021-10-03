@@ -1,9 +1,9 @@
 # ![app icon](./Screenshot/EB.png) [DBM] JSON Embed Builder
-[![release](https://img.shields.io/static/v1?label=release&message=1.0.8&color=red)](https://github.com/Gr3nDy/DBM-Embed-Builder/)
+[![release](https://img.shields.io/static/v1?label=Experimental for ver 2.0&message=1&color=yellow)](https://github.com/Gr3nDy/DBM-Embed-Builder/)
 
 Create Proffesional Looking **Embed** on **Discord** using **JSON**
 
-![gif](./Screenshot/GIF.gif)
+![gif](./Screenshot/Experimental-1_V2.gif)
 
 ##EXPERIMENTAL 1 FOR VERSION 2.0
 Since DBM is still using DiscordJS V12 there are still limitation on things that i can add into
@@ -19,6 +19,8 @@ DBM Embed Builder.
 - [x] Variables
 - [ ] Colors Variables
 - [ ] Hex Colors Support
+- [ ] Content Message/Plain Text
+- [ ] Simplified Thumbnail & Image
 - [ ] Docs/Wiki
 - [ ] JSON Builder (This will allows you to create Embed JSON in discord)
 
@@ -31,6 +33,8 @@ DBM.
 * 3.Select Edit Raw Data
 * 4.Paste [Embed (Raw Data)](https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/RawData/embed.json)
 * 5.Click on save
+* 6.Install [Dependencies]
+* 7.Restart your Bot
 
 
 # Usages
@@ -40,12 +44,10 @@ DBM.
 
 </details>
 
-# Features
-* A Few built in variables & colors that you could use 
-* Colors are in both decimal & hexadecimal
-* Plaintext (content message)
-* Simplified JSON for `image` and `thumbnail`
-
+# Depedencies
+These are some required Packages in order for it to work:
+(_Install package by typing `npm i <package-name>` on your console)
+* [really-relaxed-json](https://www.npmjs.com/package/really-relaxed-json)
 
 # Changelogs
 
@@ -92,13 +94,22 @@ DBM.
 ⚠️<b>Make sure you've installed <em>DBM Mods</em> on your DBM</b>⚠️ 
 <br>
 <br>
-If you like to use an online generator for json embed builder you can use; [Nadeko Embed Builder](https://eb.nadeko.bot)
+If you like to use an online generator for json embed builder you can use:
+[Nadeko Embed Builder](https://eb.nadeko.bot) (Plaintext, thumbnail, image isn't working anymore on experimental version, will probably be updated on experimental 2)
 <br>
-Heres a few guides that might come in handy; [Embeds|Discord.js](http://discordjs.guide/popular-topics/embeds.html)
+Heres a few guides that might come in handy:
+[Embeds|Discord.js](http://discordjs.guide/popular-topics/embeds.html)
 <br>
 <br>
-If you are experiencing problem try to post it without `curly brackets`/`{ }` on the first and the last letter of the message
-<details><summary>Gif</summary>
+With **DBM Embed Builder** You don't have to use `curly brackets`/`{ }` on the first and the last letter of the message, however
+you still can use them if you want to.
+
+<details><summary>Showcase</summary>
 
 ![curly](./Screenshot/curlybrackets.gif)
 </details>
+<br>
+<br>
+<br>
+Add this repo to your bookmark if you wanna see new update, simply just click on the star
+on top right corner.
