@@ -38,7 +38,7 @@ DBM.
 * 3.Select Edit Raw Data
 * 4.Paste [Embed (Raw Data)](https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/RawData/embed.json)
 * 5.Click on save
-* 6.Install [Dependencies]
+* 6.Install [Dependencies](https://github.com/Gr3nDy/DBM-Embed-Builder#depedencies)
 * 7.Restart your Bot
 
 
