@@ -5,7 +5,7 @@ Create Proffesional Looking **Embed** on **Discord** using **JSON**
 
 ![gif](./Screenshot/Experimental-1_V2.gif)
 
-##EXPERIMENTAL 1 FOR VERSION 2.0
+## EXPERIMENTAL 1 FOR VERSION 2.0
 Since DBM is still using DiscordJS V12 there are still limitation on things that i can add into
 DBM Embed Builder, the current version you're going to install is fully functional for the current
 DBM Version you're using.
@@ -13,7 +13,7 @@ DBM Version you're using.
 Once DBM Updated DiscordJS V13 (Discord Bot Maker V1.7 Update), i'll add more features into
 DBM Embed Builder.
 
-#Upcoming Features For **DBM Embed Builder** 2.0
+# Upcoming Features For **DBM Embed Builder** 2.0
 - [x] Lightweight
 - [x] Relaxed JSON
 - [x] Variables
