@@ -50,6 +50,7 @@ DBM.
 </details>
 
 # Depedencies
+<br>
 These are some required Packages in order for it to work:
 (_Install package by typing `npm i <package-name>` on your console)
 * [really-relaxed-json](https://www.npmjs.com/package/really-relaxed-json)
