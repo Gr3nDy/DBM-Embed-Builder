@@ -51,11 +51,11 @@ DBM.
 
 # Depedencies
 
-<details><summary>These are some required Packages in order for it to work:</summary>
+These are some required Packages in order for it to work:</summary>
 <br>
-(_Install package by typing `npm i <package-name>` on your console)
+_Install package by typing ``npm i <package-name>`` on your console_
 * [really-relaxed-json](https://www.npmjs.com/package/really-relaxed-json)
-</details>
+
 
 # Changelogs
 
