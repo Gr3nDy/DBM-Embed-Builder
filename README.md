@@ -94,8 +94,12 @@ These are some required Packages in order for it to work:
 ⚠️<b>Make sure you've installed <em>DBM Mods</em> on your DBM</b>⚠️ 
 <br>
 <br>
+<<<<<<< HEAD
 If you like to use an online generator for json embed builder you can use:
 [Nadeko Embed Builder](https://eb.nadeko.bot) (Plaintext, thumbnail, image isn't working anymore on experimental version, will probably be updated on experimental 2)
+=======
+If you like to use an online generator for json embed builder you can use; [Nadeko Embed Builder](https://eb.nadeko.bot) (Plaintext isn't working anymore on experimental version)
+>>>>>>> a39e7aa8a0cdc8ebbf7ff781b25695c433072887
 <br>
 Heres a few guides that might come in handy:
 [Embeds|Discord.js](http://discordjs.guide/popular-topics/embeds.html)
