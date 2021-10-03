@@ -119,5 +119,5 @@ you still can use them if you want to.
 </details>
 <br>
 <br>
-**Add this repo to your bookmark if you wanna see new update, simply just click on the star
-on the top right corner**
+Add this repo to your bookmark if you wanna see new update, simply just click on the star
+on the top right corner
