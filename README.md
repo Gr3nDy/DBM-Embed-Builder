@@ -2,6 +2,7 @@
 [![release](https://img.shields.io/static/v1?label=release&message=1.0.8&color=red)](https://github.com/Gr3nDy/DBM-Embed-Builder/)
 
 Create **Embed** inside **Discord**
+
 ![gif](./Screenshot/GIF.gif)
 
  
