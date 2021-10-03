@@ -1,9 +1,26 @@
 # ![app icon](./Screenshot/EB.png) [DBM] JSON Embed Builder
 [![release](https://img.shields.io/static/v1?label=release&message=1.0.8&color=red)](https://github.com/Gr3nDy/DBM-Embed-Builder/)
 
-Create **Embed** inside **Discord**
+Create Proffesional Looking **Embed** on **Discord** using **JSON**
 
 ![gif](./Screenshot/GIF.gif)
+
+##EXPERIMENTAL 1 FOR VERSION 2.0
+Since DBM is still using DiscordJS V12 there are still limitation on things that i can add into
+DBM Embed Builder, the current version you're going to install is fully functional for the current
+DBM Version you're using.
+
+Once DBM Updated DiscordJS V13 (Discord Bot Maker V1.7 Update), i'll add more features into
+DBM Embed Builder.
+
+#Upcoming Features For **DBM Embed Builder** 2.0
+- [x] Lightweight
+- [x] Relaxed JSON
+- [x] Variables
+- [ ] Colors Variables
+- [ ] Hex Colors Support
+- [ ] Docs/Wiki
+- [ ] JSON Builder (This will allows you to create Embed JSON in discord)
 
  
 # Installation
@@ -19,11 +36,8 @@ DBM.
 # Usages
 <details><summary>Commands</summary>
 
-* `embed <embed>` | Create embed from json
-* `embed help <1/2/3/4/5>` | Embed Builder guide
-* `embed variables` | List of variables
-* `embed colors` | List of color variables
-* `embed examples` | List of example format
+* `embed <json>` | Create embed from json
+
 </details>
 
 # Features
