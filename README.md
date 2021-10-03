@@ -1,5 +1,5 @@
 # ![app icon](./Screenshot/EB.png) [DBM] JSON Embed Builder
-[![release](https://img.shields.io/static/v1?label=Experimental for ver 2.0&message=1&color=yellow)](https://github.com/Gr3nDy/DBM-Embed-Builder/)
+[![release](https://img.shields.io/static/v1?label=Experimental-1-for-ver-2.0&message=1&color=yellow)](https://github.com/Gr3nDy/DBM-Embed-Builder/)
 
 Create Proffesional Looking **Embed** on **Discord** using **JSON**
 
