@@ -127,13 +127,45 @@
       "comparison": "12",
       "value": "/^{(.*})$/g",
       "iftrue": "4",
-      "iftrueVal": "[Variables]",
+      "iftrueVal": "[Thumbnail & Image]",
       "iffalse": "0",
       "iffalseVal": "[Variables]",
       "name": "Check Variable"
     },
     {
       "code": "const Discord = require(\"discord.js\")\n\nconst text = tempVars(\"param\");\nconst braces = '{' + text + '}' \n\nActions.storeValue(braces, 1, \"param\", cache);",
+      "behavior": "0",
+      "interpretation": "1",
+      "storage": "0",
+      "varName": "",
+      "VTypeSelect": "0",
+      "CVTypeValue": "",
+      "name": "Run Script"
+    },
+    {
+      "anchor_id": "[Thumbnail & Image]",
+      "color": "#8080c0",
+      "description": "[Thumbnail & Image]",
+      "name": "Create Anchor"
+    },
+    {
+      "code": "const Discord = require(\"discord.js\");\nconst { toJson } = require('really-relaxed-json');\n\nconst param = tempVars(\"param\");\n// Relaxed JSON | Double Quotes isn't necessary anymore\nconst correctJson = toJson(param);\n// Parse correctJson(String) to an object\nconst object = JSON.parse(correctJson);\n// Stringify CorrectJson(Object) back to string\nconst stringify = JSON.stringify(object);\nActions.storeValue(stringify, 1, \"jsonString\", cache);",
+      "behavior": "0",
+      "interpretation": "1",
+      "storage": "0",
+      "varName": "",
+      "VTypeSelect": "0",
+      "CVTypeValue": "",
+      "name": "Run Script"
+    },
+    {
+      "anchor_id": "[Content Message]",
+      "color": "#8080c0",
+      "description": "[Content Message]",
+      "name": "Create Anchor"
+    },
+    {
+      "code": "const Discord = require(\"discord.js\");\nconst { toJson } = require('really-relaxed-json');\n\nconst param = tempVars(\"param\");\n// Relaxed JSON | Double Quotes isn't necessary anymore\nconst correctJson = toJson(param);\n// Parse correcJson(String) to an object\nconst object = JSON.parse(correctJson);\n// Message Content\nconst content = object.content;\n\nActions.storeValue(content, 1, \"content\", cache);",
       "behavior": "0",
       "interpretation": "1",
       "storage": "0",
@@ -171,7 +203,7 @@
       "name": "Delete Message"
     },
     {
-      "code": "const Discord = require(\"discord.js\");\nconst { toJson } = require('really-relaxed-json');\n\nconst param = tempVars(\"param\");\n// Relaxed JSON | Double Quotes isn't necessary anymore\nconst correctJson = toJson(param);\n// Parse correcJson(String) to an object\nconst object = JSON.parse(correctJson); \n\n\nlet embed = new Discord.MessageEmbed(object);\nmsg.channel.send(embed);",
+      "code": "const Discord = require(\"discord.js\");\nconst { toJson } = require('really-relaxed-json');\n\nconst param = tempVars(\"param\");\nconst content = tempVars(\"content\");\n\n// Relaxed JSON | Double Quotes isn't necessary anymore\nconst correctJson = toJson(param);\n// Parse correctJson(String) to an object\nconst object = JSON.parse(correctJson); \n\n\nlet embed = new Discord.MessageEmbed(object);\nmsg.channel.send(content,embed);",
       "behavior": "0",
       "interpretation": "1",
       "storage": "0",

@@ -3,7 +3,7 @@
 
 Create a Professional Looking **Embed** on **Discord** using **JSON**
 
-![gif](./Screenshot/Experimental-1_V2.gif)
+![gif](./Screenshot/Experimental-2_V2.gif)
 
 ## EXPERIMENTAL 1 FOR VERSION 2.0
 Since DBM is still using DiscordJS V12 there are still limitation on things that i can add into
@@ -23,8 +23,8 @@ DBM Embed Builder.
 - [x] Relaxed JSON
 - [x] Variables
 - [ ] Colors Variables
-- [ ] Hex Colors Support
-- [ ] Content Message/Plain Text
+- [x] Hex Colors Support
+- [x] Content Message (`plaintext:` has been changed to `content:`)
 - [ ] Simplified Thumbnail & Image
 - [ ] Docs/Wiki
 - [ ] JSON Builder (This allow you to create Raw Embed JSON with visualizer in discord)
