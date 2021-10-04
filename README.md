@@ -24,7 +24,7 @@ DBM Embed Builder.
 - [x] Variables
 - [ ] Colors Variables
 - [x] Hex Colors Support
-- [x] Content Message (`plaintext:` has been changed to `content:`)
+- [x] Content Message (`plaintext` has been changed to `content`)
 - [ ] Simplified Thumbnail & Image
 - [ ] Docs/Wiki
 - [ ] JSON Builder (This allow you to create Raw Embed JSON with visualizer in discord)
