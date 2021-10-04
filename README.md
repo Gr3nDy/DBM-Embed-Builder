@@ -1,9 +1,9 @@
 # ![app icon](./Screenshot/EB.png) [DBM] JSON Embed Builder
-[![release](https://img.shields.io/static/v1?label=Experimental-for-ver-2.0&message=1&color=yellow)](https://github.com/Gr3nDy/DBM-Embed-Builder/)
+[![release](https://img.shields.io/static/v1?label=Experimental-for-ver-2.0&message=2&color=yellow)](https://github.com/Gr3nDy/DBM-Embed-Builder/)
 
 Create a Professional Looking **Embed** on **Discord** using **JSON**
 
-![gif](./Screenshot/Experimental-2_V2.gif)
+![gif](./Screenshot/Experimental-1_V2.gif)
 
 ## EXPERIMENTAL 1 FOR VERSION 2.0
 Since DBM is still using DiscordJS V12 there are still limitation on things that i can add into
