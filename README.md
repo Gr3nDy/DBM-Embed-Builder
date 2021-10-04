@@ -92,7 +92,7 @@ These are some required Packages in order for it to work:</summary>
 
 <details><summary>1.0.8</summary>
 
-+ [1.0.8 (LATEST VERSION)](https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/RawData/embed.json)
++ [1.0.8 OLDER VERSION)](https://raw.githubusercontent.com/Gr3nDy/DBM-Embed-Builder/master/RawData/embed-1-8(old%20version).json)
 * Added `ALIASES` (Now it's easier to post an embed)
 * Ability to change `ALIASES` Prefix
 * Bugs fixed
